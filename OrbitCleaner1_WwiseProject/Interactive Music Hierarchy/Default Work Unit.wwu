@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5A981A02-E3E4-4B20-8DDB-8E503885544E}" SchemaVersion="110">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{5A981A02-E3E4-4B20-8DDB-8E503885544E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="New Music Playlist Container" ID="{AA9DC6BA-EB53-4B7B-A1F4-6491CCFE6198}" ShortID="211252045">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="AstronautCollider" ID="{69C7D292-47E8-4574-A8E7-2222695A7481}" ShortID="53765362">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Bone Crushing" ID="{A3949EAA-DD45-4C24-BFAE-DEBB2B897F0C}" ShortID="969389414">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Asteroid" ID="{BD63D3C1-4F8A-4008-9C89-F84F98FDB12B}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="AstronautCollider" ID="{C739408B-1ECA-4C14-8889-BADF50AF944B}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bone Crushing" ID="{FAA353A1-A998-472D-A1CC-9854C6E50A18}">
+											<Language>SFX</Language>
+											<AudioFile>Bone Crushing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="747796422"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FA018235-2A95-4344-BC5F-29CD9FB862B6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{09660C46-6080-4CC4-BE1B-30DF9D4BD2DB}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6F813FC2-F0A2-4476-A439-B67C00F7BD7B}" ShortID="797687369">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="astronautCollisionValue" ID="{5B298669-D42E-42E9-A791-03087A4D0394}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{7059EDCE-3478-4D57-8053-D537279572D7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4D86D42C-8654-4ACC-B913-419DB09A69C0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Bone Crushing" ID="{F741E011-5F2A-4091-BFF7-95663BF0AF6A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="539.750566893424"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Bone Crushing" ID="{FAA353A1-A998-472D-A1CC-9854C6E50A18}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Astronaut" ID="{97D30758-3EF0-433A-B25A-CD78027663EE}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="spear_throw" ID="{05D0F110-B44A-4D32-B961-8EEEC31D2CCE}" ShortID="614799341">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Astronaut" ID="{97D30758-3EF0-433A-B25A-CD78027663EE}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="AstronautCollider" ID="{C739408B-1ECA-4C14-8889-BADF50AF944B}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="spear_throw" ID="{82EF7F19-FB68-4C44-8EF7-B95C6A0FAA9C}">
+											<Language>SFX</Language>
+											<AudioFile>spear_throw.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="955608664"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{629B6411-E1C2-4F1A-ADB9-7985CDC6A780}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{B011597B-7EA3-48B2-8531-7447816FD972}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{95611E4B-DE35-4721-AF29-05158178FE6F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="spear_throw" ID="{17B4B9D3-61C6-4C3E-8F47-E530E0107654}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="492.698412698413"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="spear_throw" ID="{82EF7F19-FB68-4C44-8EF7-B95C6A0FAA9C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Asteroid" ID="{BD63D3C1-4F8A-4008-9C89-F84F98FDB12B}" WorkUnitID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{7BCA97C3-1386-42F0-A7A6-8537D9F4376A}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{5DD23C12-49AF-4E19-890D-B8FF654ABDE2}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{49BC4300-90D1-4A41-BE91-00E0EEA26AE4}"/>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{716D5FE9-2D00-4918-BB89-43A80FAD6271}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{77271EDB-C07F-4DA9-B13A-A52A2DE0A890}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{60F60E92-51C7-4FFC-859E-228C6684E313}" ShortID="1065626065"/>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

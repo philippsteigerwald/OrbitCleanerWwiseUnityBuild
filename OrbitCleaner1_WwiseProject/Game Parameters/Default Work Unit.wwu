@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7798BD46-7387-46C9-AB97-232FED88A41C}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{7798BD46-7387-46C9-AB97-232FED88A41C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="astronautCollisionValue" ID="{5B298669-D42E-42E9-A791-03087A4D0394}"/>
+				<GameParameter Name="debrisCollisionValue" ID="{D3E82D4A-89CD-43DB-806F-C95DC8D94B6B}"/>
+				<GameParameter Name="laserCollisionValue" ID="{449E16C4-9E66-497E-B0E0-B647B0E198B4}"/>
+				<GameParameter Name="asteroidCollisionValue" ID="{A7CB8570-297D-41DF-A5A7-08427EF940B9}"/>
+				<GameParameter Name="DopplerParam" ID="{1B56E753-43A7-434D-B9D7-A07630BCD909}"/>
+				<GameParameter Name="circularSpeed" ID="{B1AEBD5C-924D-4092-A531-D0FE0F4832A5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="2"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+						<Property Name="Min" Type="Real64" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="straightSpeed" ID="{9C4B091A-4BBF-4B3F-8F78-2B5B326A48F9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distanceToShip" ID="{74278904-96C9-4FB5-AB93-E7B8B0E786B2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="V2Volume" ID="{B1E78A71-C7D8-4593-90FC-7BB1500B16D6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="5"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

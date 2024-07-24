@@ -1,0 +1,78 @@
+Event	ID	Name			Wwise Object Path	Notes
+	136431489	Stop_AsteroidCollision			\Default Work Unit\Stop_AsteroidCollision	
+	221767567	Play_ActionAsteroid			\Default Work Unit\Play_ActionAsteroid	
+	276019235	Play_TravelAlien			\Default Work Unit\Play_TravelAlien	
+	349309675	Play_AstronautTest			\Default Work Unit\Play_AstronautTest	
+	543209881	Play_TutorialTravelAstronaut			\Default Work Unit\Play_TutorialTravelAstronaut	
+	582918973	Stop_TravelLaser			\Default Work Unit\Stop_TravelLaser	
+	630432445	Play_ActionLaser			\Default Work Unit\Play_ActionLaser	
+	666603360	Play_Warpjump			\Default Work Unit\Play_Warpjump	
+	696394989	Play_LevelCountdown			\Default Work Unit\Play_LevelCountdown	
+	811880225	Play_ActionAstronaut			\Default Work Unit\Play_ActionAstronaut	
+	833009303	Play_TutorialTravelAsteroid			\Default Work Unit\Play_TutorialTravelAsteroid	
+	902202916	Play_TutorialAmbiance			\Default Work Unit\Play_TutorialAmbiance	
+	1197925711	Play_TravelAstronaut			\Default Work Unit\Play_TravelAstronaut	
+	1381358726	Play_AsteroidCollisionPart2			\Default Work Unit\Play_AsteroidCollisionPart2	
+	1615720664	Play_UIClick			\Default Work Unit\Play_UIClick	
+	1731112794	Play_LocationCueStraight			\Default Work Unit\Play_LocationCueStraight	
+	1924277306	Play_UIClick2			\Default Work Unit\Play_UIClick2	
+	1980631297	Play_TutorialTravelAlien			\Default Work Unit\Play_TutorialTravelAlien	
+	2144940502	Play_EndSequence			\Default Work Unit\Play_EndSequence	
+	2202449703	Play_AsteroidCollision			\Default Work Unit\Play_AsteroidCollision	
+	2254988051	Play_TravelLaser			\Default Work Unit\Play_TravelLaser	
+	2392669253	Play_TutorialTravelLaser			\Default Work Unit\Play_TutorialTravelLaser	
+	2425601485	Play_TravelAsteroid			\Default Work Unit\Play_TravelAsteroid	
+	2875119521	Stop_TravelAstronaut			\Default Work Unit\Stop_TravelAstronaut	
+	3070634983	Play_MouseLocator			\Default Work Unit\Play_MouseLocator	
+	3173682447	Stop_TravelAsteroid			\Default Work Unit\Stop_TravelAsteroid	
+	3175146454	Play_Welcome			\Default Work Unit\Play_Welcome	
+	3228453136	Play_CollectedAll			\Default Work Unit\Play_CollectedAll	
+	3246525111	Play_CollisionAll			\Default Work Unit\Play_CollisionAll	
+	3261248877	Stop_MouseLocator			\Default Work Unit\Stop_MouseLocator	
+	3448873816	Play_LocationCue			\Default Work Unit\Play_LocationCue	
+	3449990585	Stop_TravelAlien			\Default Work Unit\Stop_TravelAlien	
+	3497504057	Play_ActionAlien			\Default Work Unit\Play_ActionAlien	
+	3598532010	Play_KillSoundLevelEnd			\Default Work Unit\Play_KillSoundLevelEnd	
+	3809273865	Stop_AstronautTest			\Default Work Unit\Stop_AstronautTest	
+	3839890923	Play_CollisionAllV2			\Default Work Unit\Play_CollisionAllV2	
+	3861350494	Stop_TutorialAmbiance			\Default Work Unit\Stop_TutorialAmbiance	
+	4062577805	Play_StartSequence			\Default Work Unit\Play_StartSequence	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	682852519	V2Volume			\Default Work Unit\V2Volume	
+	1271304679	circularSpeed			\Default Work Unit\circularSpeed	
+	1984526032	straightSpeed			\Default Work Unit\straightSpeed	
+	2828409398	DopplerParam			\Default Work Unit\DopplerParam	
+	2843260961	astronautCollisionValue			\Default Work Unit\astronautCollisionValue	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1588715066	Echoes_Linear	Wwise Delay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19602991	AstronautTest	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AstronautV2_BE03CD33.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\ResonanceReflectSpatializerStraight\AstronautTest		147026
+	20214011	TravelAlien	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienV2_C9ADA533.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\ResonanceReflectSpatializerCircular\TravelAlien		157946
+	27543082	MouseLocator	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\SoundLocatorMono_7881D95B.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\MouseLocator		26876
+	34450819	AsteroidCollision	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AsteroidHit5Sec_8336B742.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\AsteroidCollision		35298
+	99171711	TutorialAmbiance	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\EndSequence_12553936.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\TutorialAmbiance		5055958
+	106840223	StartSequence	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\StartSequence_64660B4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\StartSequence		895948
+	157023104	EndSequence	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\EndSequence_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\EndSequence		5468496
+	207086288	TravelAstronaut	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AstronautV2_7366D630.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\ResonanceReflectSpatializerCircular\TravelAstronaut		133558
+	218385448	ActionLaser	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienAction_D97EF5AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\Actions\ActionLaser		48316
+	221162847	CollectedAll	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\CollectedAll_B839AC62.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\CollectedAll		44766
+	321599719	UIClick2	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\UIClick_E6E18BD4.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\UIClick2		27928
+	324428845	TutorialTravelAsteroid	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AsteroidFX_V2_CA98CE07.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\TutorialTravelAsteroid		40360
+	338399698	Warpjump	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\WarpJumpShieldsUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\Warpjump		669370
+	387533767	ActionAsteroid	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\LaserAction_08D2C239.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\Actions\ActionAsteroid		49022
+	395876561	ActionAstronaut	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienAction_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\Actions\ActionAstronaut		55332
+	426179743	TutorialTravelAlien	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienV2_4C0CCF62.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\TutorialTravelAlien		157946
+	513112263	LevelCountdown	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\LevelCountdown_95056557.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\LevelCountdown		355008
+	575486695	KillSoundLevelEnd	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienAction_DE21EF15.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\KillSoundLevelEnd		21276
+	602082222	TravelAsteroid	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AsteroidFX_V2_E9C832FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\ResonanceReflectSpatializerStraight\TravelAsteroid		39316
+	622535870	CollisionAll	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AstronautCollision_500F79CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\CollisionAll		48716
+	634265298	AsteroidCollisionPart2	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AsteroidHit5Sec_7D70BA9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\AsteroidCollisionPart2		403992
+	693596093	Welcome	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\Welcome_17B5453A.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\EnvironmentFX\Welcome		117884
+	822024291	TutorialTravelLaser	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\LaserV3_172D00E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\NonSpazialized\TutorialTravelLaser		44584
+	834666902	CollisionAllV2	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienAction_243C366A.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\CollisionAllV2		21228
+	926959803	LocationCueStraight	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\LocationFX_70D420D7.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\ResonanceReflectSpatializerStraight\LocationCueStraight		34866
+	1058646170	ActionAlien	D:\UnityProjects\OrbitCleaner1\OrbitCleaner1_WwiseProject\.cache\Mac\SFX\AlienAction_97647230.wem		\Actor-Mixer Hierarchy\Default Work Unit\ObjectSounds\Resonance\Actions\ActionAlien		51874
+

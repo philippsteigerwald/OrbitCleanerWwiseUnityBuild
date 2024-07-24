@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{953CE2BD-545C-4993-A68E-AD2AC29DF21E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="AstronautCollider" ID="{C739408B-1ECA-4C14-8889-BADF50AF944B}">
+					<ChildrenList>
+						<Switch Name="Astronaut" ID="{97D30758-3EF0-433A-B25A-CD78027663EE}"/>
+						<Switch Name="Debris" ID="{394E500F-B1F6-4455-B04F-1668659E7E13}"/>
+						<Switch Name="Laser" ID="{4F75FE59-C5A4-45DA-B508-CF88689713C0}"/>
+						<Switch Name="Asteroid" ID="{BD63D3C1-4F8A-4008-9C89-F84F98FDB12B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

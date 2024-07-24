@@ -1,0 +1,31 @@
+{
+  "files.exclude": {
+    "AK.Wwise.Unity.Timeline.Editor.csproj": true,
+    ".vs": true,
+    ".vscode": true,
+    ".vsconfig": true,
+    "Ak.Wwise.Api.WAAPI.csproj": true,
+    "AK.Wwise.Unity.API.csproj": true,
+    "AK.Wwise.Unity.API.Editor.csproj": true,
+    "AK.Wwise.Unity.API.WwiseTypes.csproj": true,
+    "AK.Wwise.Unity.MonoBehaviour.csproj": true,
+    "AK.Wwise.Unity.MonoBehaviour.Editor.csproj": true,
+    "AK.Wwise.Unity.Timeline.csproj": true,
+    "Assembly-CSharp.csproj": true,
+    "ConeMeshAssembly.csproj": true,
+    "ConeMeshEditorAssembly.csproj": true,
+    "Library": true,
+    "logRunSetup.txt": true,
+    "Logs": true,
+    "obj": true,
+    "OrbitCleaner1.sln": true,
+    "OrbitCleaner1_WwiseProject": true,
+    "Packages": true,
+    "ProjectSettings": true,
+    "Temp": true,
+    "UserSettings": true,
+    "WwiseUnityIntegration_Mac_Src.zip": true,
+    "WwiseUnityIntegration_Windows_Src.zip": true
+  },
+  "dotnet.defaultSolution": "OrbitCleaner1.sln"
+}

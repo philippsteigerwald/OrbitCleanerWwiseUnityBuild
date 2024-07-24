@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3D2C56A2-63ED-4E15-AE38-8E1299877C2B}" SchemaVersion="110">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{3D2C56A2-63ED-4E15-AE38-8E1299877C2B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Dolby" ID="{16B169CB-D8C8-4CE9-838F-8EB1E92C9CD4}" PluginName="Wwise 3D Audio Bed Mixer" CompanyID="0" PluginID="190" PluginType="3"/>
+				<Effect Name="New_Resonance_Audio_Renderer" ID="{FEF92CC6-1A2D-4942-A9B9-16F86D8CA666}" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3"/>
+				<Effect Name="New_Oculus_Spatializer" ID="{DB4EA7D0-56E7-4791-96C1-3BBA1901C7B7}" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+				<Effect Name="New_Resonance_Audio_Room_Effects" ID="{4B5DAEEE-A4B4-4B1B-A5CA-AAC5DEBFBABE}" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{64788F35-1A23-408D-A1A2-68487A611D03}" SchemaVersion="110">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{64788F35-1A23-408D-A1A2-68487A611D03}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="New Mixing Session" ID="{FAC53FF8-02DE-4130-BFE9-A3B6639B7DD4}">
+					<ObjectList>
+						<ObjectRef Name="Actions" ID="{1E617E59-D25B-4F41-A8B9-873ACB2BFBBF}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+						<ObjectRef Name="ActionAlien" ID="{B6E0021E-9BF1-4D87-932B-E1324011E934}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+						<ObjectRef Name="ActionAsteroid" ID="{393DA261-E58D-4AAD-A238-3001B031FED8}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+						<ObjectRef Name="ActionAstronaut" ID="{22A2F400-104B-440D-B237-00DC88D595F0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+						<ObjectRef Name="ActionLaser" ID="{6EB2EEB2-86ED-4308-8717-39187D3813AC}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

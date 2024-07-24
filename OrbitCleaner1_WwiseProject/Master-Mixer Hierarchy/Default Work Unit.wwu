@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{2E1C7DE6-8B74-4473-8AEF-74599AD9234E}" WorkUnitID="{87F9B8CC-2F28-4DAD-832C-D39CEBC1E2B3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="ReverbBus" ID="{2F920AA5-4F25-4E3D-876D-1FD8BB2582FC}">
+							<ChildrenList>
+								<AuxBus Name="SmallRoom" ID="{B7F00113-F953-4C6D-9130-B935C3B5FC7B}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="LargerRoom" ID="{17BCA9C6-3D10-4664-AAD4-6307AF76D9D6}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{241EEE19-1FC5-4A45-A4FF-BFA4DD21EF42}" ShortID="791240590">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="distanceToShip" ID="{74278904-96C9-4FB5-AB93-E7B8B0E786B2}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8FA00BCA-9074-4F78-8EB2-71C762FB6659}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-5.9958</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>99.999</XPos>
+																				<YPos>12.54557</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>12.53205</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="ReflectBus" ID="{77D385AC-A997-4B12-980E-81E285AE5674}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>768</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelPrefabs" ID="{6A79DE4F-297F-4CC7-BF13-17B00CAB0409}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+											<ObjectRef Name="Reflect_Simplified" ID="{26D1B778-1690-400C-9DBA-3B2CDEE9B3AE}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Mixer">
+									<Custom>
+										<Effect Name="Oculus Spatializer (Custom)" ID="{C76C8255-C95F-43F5-8C69-3128234F9426}" ShortID="500724005" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6">
+											<PropertyList>
+												<Property Name="Enable Reflections" Type="bool" Value="False"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="ResonanceSpatializer" ID="{621976D1-995C-42E2-A853-0417F9A6C9FF}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>528</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Resonance Audio Renderer" CompanyID="272" PluginID="100" PluginType="3">
+									<ObjectRef Name="New_Resonance_Audio_Renderer" ID="{FEF92CC6-1A2D-4942-A9B9-16F86D8CA666}" WorkUnitID="{3D2C56A2-63ED-4E15-AE38-8E1299877C2B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}"/>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{BB642418-C68C-47BF-858B-D02B62A4B526}"/>
+							</PositioningInfo>
+						</Bus>
+						<Bus Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}">
+							<ReferenceList>
+								<Reference Name="Mixer" PluginName="Resonance Audio Room Effects" CompanyID="272" PluginID="200" PluginType="6">
+									<ObjectRef Name="New_Resonance_Audio_Room_Effects" ID="{4B5DAEEE-A4B4-4B1B-A5CA-AAC5DEBFBABE}" WorkUnitID="{3D2C56A2-63ED-4E15-AE38-8E1299877C2B}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

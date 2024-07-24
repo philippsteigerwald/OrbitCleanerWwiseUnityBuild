@@ -1,0 +1,49 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1500973377	xd			\Default Work Unit\xd	
+
+State	ID	Name	State Group			Notes
+	748895195	None	xd			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1105047977	distanceToShip			\Default Work Unit\distanceToShip	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	237183425	Resonance Room Effect Bus			\Default Work Unit\Master Audio Bus\Resonance Room Effect Bus	
+	1960897870	ReflectBus			\Default Work Unit\Master Audio Bus\ReflectBus	
+	3744218805	ReverbBus			\Default Work Unit\Master Audio Bus\ReverbBus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3833865473	ResonanceSpatializer			\Default Work Unit\Master Audio Bus\ResonanceSpatializer	
+	3939756686	OculusBus			\Default Work Unit\Master Audio Bus\OculusBus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	115467246	SimplifiedReflect			\Default Work Unit\Master Audio Bus\ReflectBus\SimplifiedReflect	
+	2103919169	ResonanceSpatializerAux			\Default Work Unit\Master Audio Bus\ResonanceSpatializer\ResonanceSpatializerAux	
+	2249548841	LargerRoom			\Default Work Unit\Master Audio Bus\ReverbBus\LargerRoom	
+	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\ReverbBus\SmallRoom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	500724005	Oculus Spatializer (Custom)	Oculus Spatializer			
+	602546716	Room_Large	Wwise RoomVerb			
+	792719139	New_Resonance_Audio_Renderer	Resonance Audio Renderer			
+	1842579981	Reflect_Simplified	Wwise Reflect			
+	2883166380	New_Resonance_Audio_Room_Effects	Resonance Audio Room Effects			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

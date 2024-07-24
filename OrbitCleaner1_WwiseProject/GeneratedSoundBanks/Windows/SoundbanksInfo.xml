@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0FE9ED97-CDB9-F0A3-9EE7-651C7C4FF855}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="500724005" Name="Oculus Spatializer (Custom)" LibName="Oculus Spatializer" LibId="9572518"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="792719139" Name="New_Resonance_Audio_Renderer" LibName="Resonance Audio Renderer" LibId="6557955"/>
+					<Plugin Id="1842579981" Name="Reflect_Simplified" LibName="Wwise Reflect" LibId="11206659"/>
+					<Plugin Id="2883166380" Name="New_Resonance_Audio_Room_Effects" LibName="Resonance Audio Room Effects" LibId="13111558"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="237183425" Name="Resonance Room Effect Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2883166380"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1960897870" Name="ReflectBus"/>
+				<Bus Id="3744218805" Name="ReverbBus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3833865473" Name="ResonanceSpatializer">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="792719139"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3939756686" Name="OculusBus">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="500724005"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="115467246" Name="SimplifiedReflect">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1842579981"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2103919169" Name="ResonanceSpatializerAux"/>
+				<AuxBus Id="2249548841" Name="LargerRoom">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2933838247" Name="SmallRoom">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="682852519" Name="V2Volume"/>
+				<GameParameter Id="1105047977" Name="distanceToShip"/>
+				<GameParameter Id="1271304679" Name="circularSpeed"/>
+				<GameParameter Id="1984526032" Name="straightSpeed"/>
+				<GameParameter Id="2828409398" Name="DopplerParam"/>
+				<GameParameter Id="2843260961" Name="astronautCollisionValue"/>
+				<GameParameter Id="3112546261" Name="asteroidCollisionValue"/>
+				<GameParameter Id="3798074291" Name="debrisCollisionValue"/>
+				<GameParameter Id="4051832273" Name="laserCollisionValue"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1500973377" Name="xd">
+					<States>
+						<State Id="748895195" Name="None"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="1405785638" Name="AstronautCollider">
+					<Switches>
+						<Switch Id="300013534" Name="Astronaut"/>
+						<Switch Id="459611840" Name="Debris"/>
+						<Switch Id="3152561434" Name="Asteroid"/>
+						<Switch Id="3982605422" Name="Laser"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1054715D-6F2D-A51B-F6F5-19F91B050B9C}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="19602991" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AstronautV2.wav</ShortName>
+					<CachePath>SFX/AstronautV2_BE03CD33.wem</CachePath>
+				</File>
+				<File Id="20214011" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienV2.wav</ShortName>
+					<CachePath>SFX/AlienV2_C9ADA533.wem</CachePath>
+				</File>
+				<File Id="27543082" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SoundLocatorMono.wav</ShortName>
+					<CachePath>SFX/SoundLocatorMono_7881D95B.wem</CachePath>
+				</File>
+				<File Id="34450819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AsteroidHit5Sec.wav</ShortName>
+					<CachePath>SFX/AsteroidHit5Sec_8336B742.wem</CachePath>
+				</File>
+				<File Id="99171711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EndSequence.wav</ShortName>
+					<CachePath>SFX/EndSequence_12553936.wem</CachePath>
+				</File>
+				<File Id="106840223" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>StartSequence.wav</ShortName>
+					<CachePath>SFX/StartSequence_64660B4C.wem</CachePath>
+				</File>
+				<File Id="157023104" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EndSequence.wav</ShortName>
+					<CachePath>SFX/EndSequence_10C4C929.wem</CachePath>
+				</File>
+				<File Id="207086288" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AstronautV2.wav</ShortName>
+					<CachePath>SFX/AstronautV2_7366D630.wem</CachePath>
+				</File>
+				<File Id="218385448" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienAction.wav</ShortName>
+					<CachePath>SFX/AlienAction_D97EF5AA.wem</CachePath>
+				</File>
+				<File Id="221162847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CollectedAll.wav</ShortName>
+					<CachePath>SFX/CollectedAll_B839AC62.wem</CachePath>
+				</File>
+				<File Id="321599719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UIClick.wav</ShortName>
+					<CachePath>SFX/UIClick_E6E18BD4.wem</CachePath>
+				</File>
+				<File Id="324428845" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AsteroidFX_V2.wav</ShortName>
+					<CachePath>SFX/AsteroidFX_V2_CA98CE07.wem</CachePath>
+				</File>
+				<File Id="338399698" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WarpJumpShieldsUp.wav</ShortName>
+					<CachePath>SFX/WarpJumpShieldsUp_10C4C929.wem</CachePath>
+				</File>
+				<File Id="387533767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LaserAction.wav</ShortName>
+					<CachePath>SFX/LaserAction_08D2C239.wem</CachePath>
+				</File>
+				<File Id="395876561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienAction.wav</ShortName>
+					<CachePath>SFX/AlienAction_10C4C929.wem</CachePath>
+				</File>
+				<File Id="426179743" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienV2.wav</ShortName>
+					<CachePath>SFX/AlienV2_4C0CCF62.wem</CachePath>
+				</File>
+				<File Id="513112263" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LevelCountdown.wav</ShortName>
+					<CachePath>SFX/LevelCountdown_95056557.wem</CachePath>
+				</File>
+				<File Id="575486695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienAction.wav</ShortName>
+					<CachePath>SFX/AlienAction_DE21EF15.wem</CachePath>
+				</File>
+				<File Id="602082222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AsteroidFX_V2.wav</ShortName>
+					<CachePath>SFX/AsteroidFX_V2_E9C832FD.wem</CachePath>
+				</File>
+				<File Id="622535870" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AstronautCollision.wav</ShortName>
+					<CachePath>SFX/AstronautCollision_500F79CC.wem</CachePath>
+				</File>
+				<File Id="634265298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AsteroidHit5Sec.wav</ShortName>
+					<CachePath>SFX/AsteroidHit5Sec_7D70BA9A.wem</CachePath>
+				</File>
+				<File Id="693596093" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Welcome.wav</ShortName>
+					<CachePath>SFX/Welcome_17B5453A.wem</CachePath>
+				</File>
+				<File Id="822024291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LaserV3.wav</ShortName>
+					<CachePath>SFX/LaserV3_172D00E9.wem</CachePath>
+				</File>
+				<File Id="834666902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienAction.wav</ShortName>
+					<CachePath>SFX/AlienAction_243C366A.wem</CachePath>
+				</File>
+				<File Id="926959803" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LocationFX.wav</ShortName>
+					<CachePath>SFX/LocationFX_70D420D7.wem</CachePath>
+				</File>
+				<File Id="1058646170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AlienAction.wav</ShortName>
+					<CachePath>SFX/AlienAction_97647230.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="3497504057" Name="Play_ActionAlien" DurationType="OneShot" DurationMin="0.91613394" DurationMax="0.91613394">
+					<MediaRefs>
+						<MediaRef Id="1058646170"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="221767567" Name="Play_ActionAsteroid" DurationType="OneShot" DurationMin="0.672481" DurationMax="0.672481">
+					<MediaRefs>
+						<MediaRef Id="387533767"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="811880225" Name="Play_ActionAstronaut" DurationType="OneShot" DurationMin="0.63720536" DurationMax="0.63720536">
+					<MediaRefs>
+						<MediaRef Id="395876561"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="630432445" Name="Play_ActionLaser" DurationType="OneShot" DurationMin="1.0116168" DurationMax="1.0116168">
+					<MediaRefs>
+						<MediaRef Id="218385448"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2202449703" Name="Play_AsteroidCollision" DurationType="OneShot" DurationMin="0.3991089" DurationMax="0.3991089">
+					<MediaRefs>
+						<MediaRef Id="34450819"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1381358726" Name="Play_AsteroidCollisionPart2" DurationType="OneShot" DurationMin="4.979324" DurationMax="4.979324">
+					<MediaRefs>
+						<MediaRef Id="634265298"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="349309675" Name="Play_AstronautTest" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="19602991"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3228453136" Name="Play_CollectedAll" DurationType="OneShot" DurationMin="0.89987606" DurationMax="0.89987606">
+					<MediaRefs>
+						<MediaRef Id="221162847"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2933838247" Name="SmallRoom"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3246525111" Name="Play_CollisionAll" DurationType="OneShot" DurationMin="1.3997504" DurationMax="1.3997504">
+					<MediaRefs>
+						<MediaRef Id="622535870"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3839890923" Name="Play_CollisionAllV2" DurationType="OneShot" DurationMin="0.7056455" DurationMax="0.7056455">
+					<MediaRefs>
+						<MediaRef Id="834666902"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2144940502" Name="Play_EndSequence" DurationType="OneShot" DurationMin="62" DurationMax="62">
+					<MediaRefs>
+						<MediaRef Id="157023104"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3598532010" Name="Play_KillSoundLevelEnd" DurationType="OneShot" DurationMin="4.8685546" DurationMax="4.8685546">
+					<MediaRefs>
+						<MediaRef Id="575486695"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1588715066"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="696394989" Name="Play_LevelCountdown" DurationType="OneShot" DurationMin="4.023952" DurationMax="4.023952">
+					<MediaRefs>
+						<MediaRef Id="513112263"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3448873816" Name="Play_LocationCue" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.3942116" DurationMax="0.3942116">
+					<MediaRefs>
+						<MediaRef Id="926959803"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1731112794" Name="Play_LocationCueStraight" DurationType="OneShot" DurationMin="0.3942116" DurationMax="0.3942116">
+					<MediaRefs>
+						<MediaRef Id="926959803"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3070634983" Name="Play_MouseLocator" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="27543082"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4062577805" Name="Play_StartSequence" DurationType="OneShot" DurationMin="9.331795" DurationMax="9.331795">
+					<MediaRefs>
+						<MediaRef Id="106840223"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="276019235" Name="Play_TravelAlien" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="20214011"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2425601485" Name="Play_TravelAsteroid" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="602082222"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1197925711" Name="Play_TravelAstronaut" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="207086288"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2254988051" Name="Play_TravelLaser" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="822024291"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="115467246" Name="SimplifiedReflect"/>
+						<AuxBusRef Id="2103919169" Name="ResonanceSpatializerAux"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="902202916" Name="Play_TutorialAmbiance" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="99171711"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1980631297" Name="Play_TutorialTravelAlien" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="426179743"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="833009303" Name="Play_TutorialTravelAsteroid" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="324428845"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="543209881" Name="Play_TutorialTravelAstronaut" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="207086288"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2392669253" Name="Play_TutorialTravelLaser" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="822024291"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1615720664" Name="Play_UIClick" DurationType="OneShot" DurationMin="0.31554946" DurationMax="0.31554946">
+					<MediaRefs>
+						<MediaRef Id="321599719"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1924277306" Name="Play_UIClick2" DurationType="OneShot" DurationMin="0.34410915" DurationMax="0.34410915">
+					<MediaRefs>
+						<MediaRef Id="321599719"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="666603360" Name="Play_Warpjump" DurationType="OneShot" DurationMin="7.5881405" DurationMax="7.5881405">
+					<MediaRefs>
+						<MediaRef Id="338399698"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3175146454" Name="Play_Welcome" DurationType="OneShot" DurationMin="1.9246297" DurationMax="1.9246297">
+					<MediaRefs>
+						<MediaRef Id="693596093"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="136431489" Name="Stop_AsteroidCollision" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3809273865" Name="Stop_AstronautTest" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3261248877" Name="Stop_MouseLocator" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3449990585" Name="Stop_TravelAlien" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3173682447" Name="Stop_TravelAsteroid" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2875119521" Name="Stop_TravelAstronaut" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="582918973" Name="Stop_TravelLaser" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3861350494" Name="Stop_TutorialAmbiance" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="682852519" Name="V2Volume"/>
+				<GameParameter Id="1271304679" Name="circularSpeed"/>
+				<GameParameter Id="1984526032" Name="straightSpeed"/>
+				<GameParameter Id="2828409398" Name="DopplerParam"/>
+				<GameParameter Id="2843260961" Name="astronautCollisionValue"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A50F32E5-CE05-9229-1441-25E1F8615C1D}</FileHash>
+</SoundBanksInfo>

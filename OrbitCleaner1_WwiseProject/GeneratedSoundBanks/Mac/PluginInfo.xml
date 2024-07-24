@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Platform="Mac" BasePlatform="Mac">
+	<PluginLibs>
+		<PluginLib LibName="Resonance Audio Renderer" LibId="6557955" Type="Effect" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+		<PluginLib LibName="Wwise Delay" LibId="6946819" Type="Effect" DLL="AkDelay" StaticLib="AkDelayFX"/>
+		<PluginLib LibName="Wwise RoomVerb" LibId="7733251" Type="Effect" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<PluginLib LibName="Oculus Spatializer" LibId="9572518" Type="Mixer" DLL="OculusSpatializerWwise" StaticLib="OculusSpatializerWwiseFX"/>
+		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
+		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="Resonance Audio Room Effects" LibId="13111558" Type="Mixer" DLL="ResonanceAudio" StaticLib="ResonanceAudioFX"/>
+	</PluginLibs>
+	<FileHash>{B8515961-3FC8-5ECE-4D04-E4B77B552709}</FileHash>
+</PluginInfo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4AC95F24-26B0-478F-B3A0-163AC5429B93}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{4AC95F24-26B0-478F-B3A0-163AC5429B93}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{3905CEEF-B3AF-470F-9BB5-68E6B7979C72}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_CollisionAllV2" ID="{6E371BFD-A340-4055-BF8C-386029CCCABB}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ActionAstronaut" ID="{F6ECDEC2-1DB4-412F-B247-34C4E5C410AD}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TravelAstronaut" ID="{3C9269C6-02DB-41B8-8F06-8D79C1F42F6A}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_TravelAsteroid" ID="{8466466A-BFFD-421C-B8BA-4E7DD896FE7C}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_TravelAlien" ID="{C7BA7D62-40C6-426E-8079-C5B707C1F4DC}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_AsteroidCollisionPart2" ID="{8C0A7EA1-4D60-4286-8BFD-92E4B6245410}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MouseLocator" ID="{F669D9AB-D9E8-428E-8ACB-B9F68BC81850}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ActionAsteroid" ID="{F56EA8E8-4BF8-42F9-AF3C-46F77EE9AB6A}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LocationCueStraight" ID="{32D0E09B-094C-43BF-90F7-25AFBBBE7E9D}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_KillSoundLevelEnd" ID="{B31C6E33-C5A7-43C1-BCF2-AC0BEAB628AA}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialTravelLaser" ID="{918DDAD3-9647-4454-94E4-853F02DFB65E}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LocationCue" ID="{F319B6C9-8A20-449C-A67A-BE45341842AE}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UIClick2" ID="{5817A4CB-9753-4578-B585-345B7D7C9B67}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_AstronautTest" ID="{AFF3821C-8178-4655-8CAF-B3F1DA8EBE71}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_AsteroidCollision" ID="{29E85DA6-A3B9-46B4-8316-1D6CC2F07FD3}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_TutorialAmbiance" ID="{C5E995FA-4A95-46C9-9ABB-1A8A88930715}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_TravelLaser" ID="{C901B4AE-2FE5-46D5-9665-B39261E83E0B}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EndSequence" ID="{9421FD70-C176-46F4-88CE-E881A427F7C8}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TravelLaser" ID="{832113EE-8430-474D-9577-37E22CF8FCEB}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ActionLaser" ID="{F8E606F3-F0D1-4798-954A-82EE6D49435A}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollisionAll" ID="{98CE2AB2-BB21-47FE-B24D-3170C4183D60}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LevelCountdown" ID="{DEF25C15-B154-497B-92BF-A2EB14A245B0}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialTravelAsteroid" ID="{EEA3E3B6-BA8C-49B6-9759-9BCB6A53F0D0}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_MouseLocator" ID="{27A01A6F-7CE1-49E2-ACEC-8B7F11C0263E}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialTravelAstronaut" ID="{7A612669-D7F0-4A83-8AE1-89C9B5186884}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TravelAsteroid" ID="{8F81C65C-26C6-4B26-A292-66B67A5E1024}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialAmbiance" ID="{133ECB0A-0E84-4B5A-8C23-1B7A7249B27F}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollectedAll" ID="{C335A50D-1462-4B75-82B2-C64A3C9DA576}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Welcome" ID="{E4EB64BC-E179-4B86-B0CB-B3BE98CB2DA9}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UIClick" ID="{485D02E7-50A4-4B8D-BCF1-0FC021B14C28}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TravelAlien" ID="{0E92D0A8-1759-4BB1-AA77-8C0971E9C0D0}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_AsteroidCollision" ID="{D4D0D3DF-3DDB-4C35-9300-9D222C55644A}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ActionAlien" ID="{E9EDD1DB-4E1D-4C43-8CF3-5B73B6B6A080}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialTravelAlien" ID="{D4607912-74A3-4C49-8E9B-938C43404444}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_AstronautTest" ID="{1CD757D4-D733-4CD3-A494-3CB12205E765}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Warpjump" ID="{48347F18-A0F0-4CF3-B0A9-C5B36D182AD0}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_TravelAstronaut" ID="{4DB545F1-4D6E-4DC1-8EF0-E8B822368826}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StartSequence" ID="{D7AC6A97-8CDD-4F01-8DA9-021EA04F5000}" WorkUnitID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

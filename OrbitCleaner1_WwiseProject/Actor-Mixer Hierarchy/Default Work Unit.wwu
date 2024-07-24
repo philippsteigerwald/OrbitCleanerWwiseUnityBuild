@@ -1,0 +1,3393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4743849B-6D9A-437C-A28E-F095502E28DD}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{4743849B-6D9A-437C-A28E-F095502E28DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="ObjectSounds" ID="{0068F2A9-A46D-4485-BF54-483DD8461311}" ShortID="285446972">
+					<ChildrenList>
+						<ActorMixer Name="ResonanceReflectSpatializerCircular" ID="{554F6F3F-9802-43A7-A0AA-B80AB690F7C9}" ShortID="339506628">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Resonance Audio Room Effects (Attached)" ID="{2112550C-B4B9-4525-8A1F-6FE91FB0A3EE}" ShortID="284895101" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TravelAstronaut" ID="{E25B71BA-9F49-4C55-A063-398B27E791AA}" ShortID="1033275208">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-130</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{D37BE260-3FF2-489A-B11B-055575081BF6}" ShortID="285456068" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationStraight" ID="{8AF6DE76-74A8-453F-B763-F7DAAD2C84B0}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceSpatializer" ID="{621976D1-995C-42E2-A853-0417F9A6C9FF}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAstronaut" ID="{75F341B6-52C8-4D67-88A2-AAC28A3CE634}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAstronaut.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="985626263"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AstronautFX" ID="{E4568551-8EFB-497B-8561-67B43DB8E61A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.20359281437126"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="852534410"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AstronautV2" ID="{658B3B58-F880-4546-A0EF-C49FA298E7F6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0738137082601055"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.51318101933217"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautV2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207086288"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{B1710115-2F6B-43A4-BDA1-296B0D5944E7}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-7.09459459459459"/>
+												<Property Name="PanY" Type="Real64" Value="2.17391304347825"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{1361BC96-6318-42F0-881F-259EA35A0F0B}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Circleee" ID="{41BD1974-658B-4F9D-9FE6-890398D01490}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="15000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.08629</XPos>
+															<YPos>74.29379</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.5533</XPos>
+															<YPos>76.27119</YPos>
+															<Flags>0</Flags>
+															<Time>652</Time>
+														</Point>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>63.84181</YPos>
+															<Flags>0</Flags>
+															<Time>1304</Time>
+														</Point>
+														<Point>
+															<XPos>76.6497461928934</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>1956</Time>
+														</Point>
+														<Point>
+															<XPos>69.5431472081218</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>2608</Time>
+														</Point>
+														<Point>
+															<XPos>51.2690355329949</XPos>
+															<YPos>-66.1016949152542</YPos>
+															<Flags>0</Flags>
+															<Time>3260</Time>
+														</Point>
+														<Point>
+															<XPos>8.62944162436548</XPos>
+															<YPos>-80.225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>3913</Time>
+														</Point>
+														<Point>
+															<XPos>-20.8121827411168</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>4565</Time>
+														</Point>
+														<Point>
+															<XPos>-53.8071065989848</XPos>
+															<YPos>-40.1129943502825</YPos>
+															<Flags>0</Flags>
+															<Time>5217</Time>
+														</Point>
+														<Point>
+															<XPos>-61.9289340101523</XPos>
+															<YPos>6.21468926553672</YPos>
+															<Flags>0</Flags>
+															<Time>5869</Time>
+														</Point>
+														<Point>
+															<XPos>-43.1472081218274</XPos>
+															<YPos>33.3333333333333</YPos>
+															<Flags>0</Flags>
+															<Time>6521</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>49.1525423728814</YPos>
+															<Flags>0</Flags>
+															<Time>7173</Time>
+														</Point>
+														<Point>
+															<XPos>32.4873096446701</XPos>
+															<YPos>25.4237288135593</YPos>
+															<Flags>0</Flags>
+															<Time>7826</Time>
+														</Point>
+														<Point>
+															<XPos>49.238578680203</XPos>
+															<YPos>-0.564971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>8478</Time>
+														</Point>
+														<Point>
+															<XPos>46.19289</XPos>
+															<YPos>-29.9435</YPos>
+															<Flags>0</Flags>
+															<Time>9130</Time>
+														</Point>
+														<Point>
+															<XPos>32.48731</XPos>
+															<YPos>-52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>9782</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-48.58757</YPos>
+															<Flags>0</Flags>
+															<Time>10434</Time>
+														</Point>
+														<Point>
+															<XPos>-24.3654822335025</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>11086</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>17.51412</YPos>
+															<Flags>0</Flags>
+															<Time>11739</Time>
+														</Point>
+														<Point>
+															<XPos>4.06091370558376</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>12391</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-2.82485875706215</YPos>
+															<Flags>0</Flags>
+															<Time>13043</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-18.6440677966102</YPos>
+															<Flags>0</Flags>
+															<Time>13695</Time>
+														</Point>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-19.20904</YPos>
+															<Flags>0</Flags>
+															<Time>14347</Time>
+														</Point>
+														<Point>
+															<XPos>-2.53807106598984</XPos>
+															<YPos>-4.51977401129943</YPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{5352A219-29D1-4709-86C5-5482BB21CE1D}" ShortID="983852264">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="circularSpeed" ID="{B1AEBD5C-924D-4092-A531-D0FE0F4832A5}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{C4D9E8FD-72B4-47A0-B44E-E0FAD6DF8C65}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>5</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AstronautV2" ID="{658B3B58-F880-4546-A0EF-C49FA298E7F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TravelAlien" ID="{2E330F2F-3F6C-452E-A21E-3548028819AA}" ShortID="114198454">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>120</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{96C78BEE-BAA5-4DE1-A64B-A65A97880F94}" ShortID="416861486" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ResonanceSpatializer" ID="{621976D1-995C-42E2-A853-0417F9A6C9FF}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAlien" ID="{58CC18B9-D42C-4422-B20E-DF5709C9E1F5}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAlien.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="717137799"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AlienFX" ID="{AE3D3E29-EA12-4300-8D3D-7B41B98D76E0}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.87305389221557"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.58203592814371"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AlienFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="757954999"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AlienV2" ID="{995DF4F1-CFBC-4BDD-9325-C3A0849B2CF8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0622242628393521"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0161676646706588"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.456626851073761"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.2463029587304"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AlienV2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="20214011"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{9FDE2098-AA90-4071-A33E-8655E3B3CE9E}" ShortID="310008689">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="circularSpeed" ID="{B1AEBD5C-924D-4092-A531-D0FE0F4832A5}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{135C3AEF-2D9C-4C0A-9481-02C34CAB3433}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>-300</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>5</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AlienV2" ID="{995DF4F1-CFBC-4BDD-9325-C3A0849B2CF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{CB1C8710-B685-4161-BE4E-F9C2907C9D82}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="0.139447958596887"/>
+										<Property Name="PanY" Type="Real64" Value="0.313447927199177"/>
+									</PropertyList>
+								</Panner>
+								<Position Name="" ID="{93B5F5A0-B6AD-4153-91D4-B9BB4EACEFF1}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Circleee" ID="{27D0547F-8324-4229-B2F9-4841BAC78700}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="15000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-39.08629</XPos>
+													<YPos>74.29379</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>3.5533</XPos>
+													<YPos>76.27119</YPos>
+													<Flags>0</Flags>
+													<Time>652</Time>
+												</Point>
+												<Point>
+													<XPos>37.56345</XPos>
+													<YPos>63.84181</YPos>
+													<Flags>0</Flags>
+													<Time>1304</Time>
+												</Point>
+												<Point>
+													<XPos>76.6497461928934</XPos>
+													<YPos>7.34463276836158</YPos>
+													<Flags>0</Flags>
+													<Time>1956</Time>
+												</Point>
+												<Point>
+													<XPos>69.5431472081218</XPos>
+													<YPos>-31.6384180790961</YPos>
+													<Flags>0</Flags>
+													<Time>2608</Time>
+												</Point>
+												<Point>
+													<XPos>51.2690355329949</XPos>
+													<YPos>-66.1016949152542</YPos>
+													<Flags>0</Flags>
+													<Time>3260</Time>
+												</Point>
+												<Point>
+													<XPos>8.62944162436548</XPos>
+													<YPos>-80.225988700565</YPos>
+													<Flags>0</Flags>
+													<Time>3913</Time>
+												</Point>
+												<Point>
+													<XPos>-20.8121827411168</XPos>
+													<YPos>-68.3615819209039</YPos>
+													<Flags>0</Flags>
+													<Time>4565</Time>
+												</Point>
+												<Point>
+													<XPos>-53.8071065989848</XPos>
+													<YPos>-40.1129943502825</YPos>
+													<Flags>0</Flags>
+													<Time>5217</Time>
+												</Point>
+												<Point>
+													<XPos>-61.9289340101523</XPos>
+													<YPos>6.21468926553672</YPos>
+													<Flags>0</Flags>
+													<Time>5869</Time>
+												</Point>
+												<Point>
+													<XPos>-43.1472081218274</XPos>
+													<YPos>33.3333333333333</YPos>
+													<Flags>0</Flags>
+													<Time>6521</Time>
+												</Point>
+												<Point>
+													<XPos>-3.55329949238579</XPos>
+													<YPos>49.1525423728814</YPos>
+													<Flags>0</Flags>
+													<Time>7173</Time>
+												</Point>
+												<Point>
+													<XPos>32.4873096446701</XPos>
+													<YPos>25.4237288135593</YPos>
+													<Flags>0</Flags>
+													<Time>7826</Time>
+												</Point>
+												<Point>
+													<XPos>49.238578680203</XPos>
+													<YPos>-0.564971751412429</YPos>
+													<Flags>0</Flags>
+													<Time>8478</Time>
+												</Point>
+												<Point>
+													<XPos>46.19289</XPos>
+													<YPos>-29.9435</YPos>
+													<Flags>0</Flags>
+													<Time>9130</Time>
+												</Point>
+												<Point>
+													<XPos>32.48731</XPos>
+													<YPos>-52.54237</YPos>
+													<Flags>0</Flags>
+													<Time>9782</Time>
+												</Point>
+												<Point>
+													<XPos>-0.50761</XPos>
+													<YPos>-48.58757</YPos>
+													<Flags>0</Flags>
+													<Time>10434</Time>
+												</Point>
+												<Point>
+													<XPos>-24.3654822335025</XPos>
+													<YPos>-10.7344632768362</YPos>
+													<Flags>0</Flags>
+													<Time>11086</Time>
+												</Point>
+												<Point>
+													<XPos>-18.78173</XPos>
+													<YPos>17.51412</YPos>
+													<Flags>0</Flags>
+													<Time>11739</Time>
+												</Point>
+												<Point>
+													<XPos>4.06091370558376</XPos>
+													<YPos>18.0790960451977</YPos>
+													<Flags>0</Flags>
+													<Time>12391</Time>
+												</Point>
+												<Point>
+													<XPos>25.8883248730965</XPos>
+													<YPos>-2.82485875706215</YPos>
+													<Flags>0</Flags>
+													<Time>13043</Time>
+												</Point>
+												<Point>
+													<XPos>19.7969543147208</XPos>
+													<YPos>-18.6440677966102</YPos>
+													<Flags>0</Flags>
+													<Time>13695</Time>
+												</Point>
+												<Point>
+													<XPos>1.01523</XPos>
+													<YPos>-19.20904</YPos>
+													<Flags>0</Flags>
+													<Time>14347</Time>
+												</Point>
+												<Point>
+													<XPos>-2.53807106598984</XPos>
+													<YPos>-4.51977401129943</YPos>
+													<Flags>0</Flags>
+													<Time>15000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{9EDB2BD7-21FB-4DB0-85A7-04CF78BA1836}" ShortID="1032718765">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="V2Volume" ID="{B1E78A71-C7D8-4593-90FC-7BB1500B16D6}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0BBFC6A4-90D5-40BB-A71B-889B2A189021}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.04524</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2</XPos>
+																		<YPos>5</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>7.5</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</ActorMixer>
+						<ActorMixer Name="Resonance" ID="{A9937E84-20A5-4417-85A5-4379D3103A2C}" ShortID="959916497">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Resonance Audio Room Effects (Attached)" ID="{2C8CE071-3669-4F97-B78A-276E7D0325CD}" ShortID="656373336" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="ResonanceSpatializer" ID="{621976D1-995C-42E2-A853-0417F9A6C9FF}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AsteroidCollision" ID="{74524F66-826A-4150-B363-4CF580CC369B}" ShortID="346785603">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AsteroidHit5Sec" ID="{A9B2EE91-B2B9-4698-8EE2-492293E52ED4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.399108901057048"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidHit5Sec.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="34450819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AsteroidHit5Sec" ID="{A9B2EE91-B2B9-4698-8EE2-492293E52ED4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CollectedAll" ID="{A5EE48BE-6CD4-446B-956D-F8B55915AF4B}" ShortID="1053868681">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-560</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="SmallRoom" ID="{B7F00113-F953-4C6D-9130-B935C3B5FC7B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CollectedAll" ID="{01A34BB3-3B1E-4085-A729-E4A344E224E3}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.00551826958328241"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00551826958328241"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CollectedAll.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="221162847"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CollectedAll" ID="{01A34BB3-3B1E-4085-A729-E4A344E224E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CollisionAll" ID="{8F3CC1B3-2B48-419C-9328-0A418273B1AE}" ShortID="13163258">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-560</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AstronautCollision" ID="{39CD1938-64A5-49D9-9301-8F9463375EAC}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0210506487025948"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautCollision.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="622535870"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2EDAEA82-43F8-41B1-A4DE-67594FB40677}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Circleee" ID="{086006F3-4D7E-4890-A415-BAAFE5772916}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="15000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.08629</XPos>
+															<YPos>74.29379</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.5533</XPos>
+															<YPos>76.27119</YPos>
+															<Flags>0</Flags>
+															<Time>652</Time>
+														</Point>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>63.84181</YPos>
+															<Flags>0</Flags>
+															<Time>1304</Time>
+														</Point>
+														<Point>
+															<XPos>76.6497461928934</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>1956</Time>
+														</Point>
+														<Point>
+															<XPos>69.5431472081218</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>2608</Time>
+														</Point>
+														<Point>
+															<XPos>51.2690355329949</XPos>
+															<YPos>-66.1016949152542</YPos>
+															<Flags>0</Flags>
+															<Time>3260</Time>
+														</Point>
+														<Point>
+															<XPos>8.62944162436548</XPos>
+															<YPos>-80.225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>3913</Time>
+														</Point>
+														<Point>
+															<XPos>-20.8121827411168</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>4565</Time>
+														</Point>
+														<Point>
+															<XPos>-53.8071065989848</XPos>
+															<YPos>-40.1129943502825</YPos>
+															<Flags>0</Flags>
+															<Time>5217</Time>
+														</Point>
+														<Point>
+															<XPos>-61.9289340101523</XPos>
+															<YPos>6.21468926553672</YPos>
+															<Flags>0</Flags>
+															<Time>5869</Time>
+														</Point>
+														<Point>
+															<XPos>-43.1472081218274</XPos>
+															<YPos>33.3333333333333</YPos>
+															<Flags>0</Flags>
+															<Time>6521</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>49.1525423728814</YPos>
+															<Flags>0</Flags>
+															<Time>7173</Time>
+														</Point>
+														<Point>
+															<XPos>32.4873096446701</XPos>
+															<YPos>25.4237288135593</YPos>
+															<Flags>0</Flags>
+															<Time>7826</Time>
+														</Point>
+														<Point>
+															<XPos>49.238578680203</XPos>
+															<YPos>-0.564971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>8478</Time>
+														</Point>
+														<Point>
+															<XPos>46.19289</XPos>
+															<YPos>-29.9435</YPos>
+															<Flags>0</Flags>
+															<Time>9130</Time>
+														</Point>
+														<Point>
+															<XPos>32.48731</XPos>
+															<YPos>-52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>9782</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-48.58757</YPos>
+															<Flags>0</Flags>
+															<Time>10434</Time>
+														</Point>
+														<Point>
+															<XPos>-24.3654822335025</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>11086</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>17.51412</YPos>
+															<Flags>0</Flags>
+															<Time>11739</Time>
+														</Point>
+														<Point>
+															<XPos>4.06091370558376</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>12391</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-2.82485875706215</YPos>
+															<Flags>0</Flags>
+															<Time>13043</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-18.6440677966102</YPos>
+															<Flags>0</Flags>
+															<Time>13695</Time>
+														</Point>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-19.20904</YPos>
+															<Flags>0</Flags>
+															<Time>14347</Time>
+														</Point>
+														<Point>
+															<XPos>-2.53807106598984</XPos>
+															<YPos>-4.51977401129943</YPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="AstronautCollision" ID="{39CD1938-64A5-49D9-9301-8F9463375EAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<ActorMixer Name="Actions" ID="{1E617E59-D25B-4F41-A8B9-873ACB2BFBBF}" ShortID="542040032">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ActionAlien" ID="{B6E0021E-9BF1-4D87-932B-E1324011E934}" ShortID="693416896">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-640</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AlienAction" ID="{B2F979C6-4233-497D-865E-737467FC4EF7}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0375005091857103"/>
+														<Property Name="LoopEnd" Type="Real64" Value="0.084001140575991"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0225003055114261"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.609008269175934"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AlienAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1058646170"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AlienAction" ID="{B2F979C6-4233-497D-865E-737467FC4EF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ActionAstronaut" ID="{22A2F400-104B-440D-B237-00DC88D595F0}" ShortID="634253377">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="LoopCount" Type="int32" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="AttachableMixerInput">
+													<Custom>
+														<Effect Name="Oculus Spatializer (Attached)" ID="{97147D25-5BF8-473A-BCD5-D4C4D1690711}" ShortID="281907240" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AstronautAction" ID="{4E90A542-39CC-4ED7-A86F-6BD839A29543}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.414304790419161"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.941601796407186"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AstronautAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="124210471"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="AlienAction" ID="{AC5F4EA8-14FA-4E0A-A8F6-50AC809F6E0F}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="21.424"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.269253655953399"/>
+														<Property Name="LoopEnd" Type="Real64" Value="0.38175518351053"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AlienAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395876561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AlienAction" ID="{AC5F4EA8-14FA-4E0A-A8F6-50AC809F6E0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ActionAsteroid" ID="{393DA261-E58D-4AAD-A238-3001B031FED8}" ShortID="23483321">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>720</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LaserAction" ID="{B9EB788E-B137-41CE-95C2-9AC2E9B03D17}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.532859203141677"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.364414375222304"/>
+														<Property Name="LoopBegin" Type="Real64" Value="4.77122799016389"/>
+														<Property Name="LoopEnd" Type="Real64" Value="5.31886386426441"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.74264285445566"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.76193346774193"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>LaserAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="387533767"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LaserAction" ID="{B9EB788E-B137-41CE-95C2-9AC2E9B03D17}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ActionLaser" ID="{6EB2EEB2-86ED-4308-8717-39187D3813AC}" ShortID="510122687">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-880</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LaserAction" ID="{258EEA89-EFC4-4D25-8FD5-4A7E7C2D9563}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.02184102359796"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.282530688622754"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.71318475951323"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.76193346774193"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>LaserAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="208233062"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="AlienAction" ID="{E2399ABF-6977-4234-8E67-60AE3AA631CA}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="0.1"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0195002647765693"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0945012831479897"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0998066350711777"/>
+														<Property Name="LoopEnd" Type="Real64" Value="0.162183547026334"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.080085213445564"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AlienAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="218385448"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AlienAction" ID="{E2399ABF-6977-4234-8E67-60AE3AA631CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<Sound Name="CollisionAllV2" ID="{C61FD201-9E8A-4291-8EF5-6DA90205E404}" ShortID="829929831">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1870</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserAction" ID="{E3EE1CAF-325E-43A5-8E58-F07A580F5184}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.02184102359796"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.282530688622754"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.71318475951323"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.76193346774193"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserAction.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="21683691"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AlienAction" ID="{5E7A40B0-F341-4197-A737-3AC3D4EB1063}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0220126011740373"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.1"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.233333572444795"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.472930654116783"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AlienAction.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="834666902"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AlienAction" ID="{5E7A40B0-F341-4197-A737-3AC3D4EB1063}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LocationCue" ID="{6F53891E-B1C7-4211-BC43-A65BE121E84E}" ShortID="264580908">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{6A9F3F47-AFE8-408F-BE2B-64C959F208A3}" ShortID="57951099" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3">
+													<PropertyList>
+														<Property Name="EnableReflections" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="LocationCue" ID="{2924F6A7-5FF0-4601-8E98-6CB8ABAAA412}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LocationCue" ID="{288BF337-A114-42FA-9225-B0F1AC4AF154}">
+											<Language>SFX</Language>
+											<AudioFile>LocationCue.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="216218503"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="WhiteNoise2HzDown" ID="{B50752A1-2CA1-4238-ACBE-0253B9DC52C8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0633798074574266"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.531599297012304"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WhiteNoise2HzDown.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="928439080"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="sonar" ID="{958892CF-A9F9-47DA-968C-CB4591C5C4D0}">
+											<Language>SFX</Language>
+											<AudioFile>sonar.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="224348121"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LocationFX" ID="{E404AA74-6E35-4C51-8134-9965772E98E0}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0224550898203593"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LocationFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="926959803"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LocationFX" ID="{E404AA74-6E35-4C51-8134-9965772E98E0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MouseLocator" ID="{0C896C10-4FF8-471C-8064-A496F109A2F2}" ShortID="353720909">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-220</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{7D18687B-9F22-43BF-939F-1FC8D1F73654}" ShortID="505256374" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SoundLocatorMono" ID="{39323357-2CA0-4E63-BE79-C78DA1B5C26C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.041773654430527"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0993916663989405"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.403022570823859"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SoundLocatorMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="27543082"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{A8A77C3B-EAAD-437C-806A-C937C4D271C2}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="0.139447958596887"/>
+												<Property Name="PanY" Type="Real64" Value="0.313447927199177"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{7A8A47D7-1698-4D5B-9F0B-9CAA066BAA1A}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Circleee" ID="{98EC91AA-28B2-44D7-8044-A59081E333C7}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="15000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.08629</XPos>
+															<YPos>74.29379</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.5533</XPos>
+															<YPos>76.27119</YPos>
+															<Flags>0</Flags>
+															<Time>652</Time>
+														</Point>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>63.84181</YPos>
+															<Flags>0</Flags>
+															<Time>1304</Time>
+														</Point>
+														<Point>
+															<XPos>76.6497461928934</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>1956</Time>
+														</Point>
+														<Point>
+															<XPos>69.5431472081218</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>2608</Time>
+														</Point>
+														<Point>
+															<XPos>51.2690355329949</XPos>
+															<YPos>-66.1016949152542</YPos>
+															<Flags>0</Flags>
+															<Time>3260</Time>
+														</Point>
+														<Point>
+															<XPos>8.62944162436548</XPos>
+															<YPos>-80.225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>3913</Time>
+														</Point>
+														<Point>
+															<XPos>-20.8121827411168</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>4565</Time>
+														</Point>
+														<Point>
+															<XPos>-53.8071065989848</XPos>
+															<YPos>-40.1129943502825</YPos>
+															<Flags>0</Flags>
+															<Time>5217</Time>
+														</Point>
+														<Point>
+															<XPos>-61.9289340101523</XPos>
+															<YPos>6.21468926553672</YPos>
+															<Flags>0</Flags>
+															<Time>5869</Time>
+														</Point>
+														<Point>
+															<XPos>-43.1472081218274</XPos>
+															<YPos>33.3333333333333</YPos>
+															<Flags>0</Flags>
+															<Time>6521</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>49.1525423728814</YPos>
+															<Flags>0</Flags>
+															<Time>7173</Time>
+														</Point>
+														<Point>
+															<XPos>32.4873096446701</XPos>
+															<YPos>25.4237288135593</YPos>
+															<Flags>0</Flags>
+															<Time>7826</Time>
+														</Point>
+														<Point>
+															<XPos>49.238578680203</XPos>
+															<YPos>-0.564971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>8478</Time>
+														</Point>
+														<Point>
+															<XPos>46.19289</XPos>
+															<YPos>-29.9435</YPos>
+															<Flags>0</Flags>
+															<Time>9130</Time>
+														</Point>
+														<Point>
+															<XPos>32.48731</XPos>
+															<YPos>-52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>9782</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-48.58757</YPos>
+															<Flags>0</Flags>
+															<Time>10434</Time>
+														</Point>
+														<Point>
+															<XPos>-24.3654822335025</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>11086</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>17.51412</YPos>
+															<Flags>0</Flags>
+															<Time>11739</Time>
+														</Point>
+														<Point>
+															<XPos>4.06091370558376</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>12391</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-2.82485875706215</YPos>
+															<Flags>0</Flags>
+															<Time>13043</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-18.6440677966102</YPos>
+															<Flags>0</Flags>
+															<Time>13695</Time>
+														</Point>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-19.20904</YPos>
+															<Flags>0</Flags>
+															<Time>14347</Time>
+														</Point>
+														<Point>
+															<XPos>-2.53807106598984</XPos>
+															<YPos>-4.51977401129943</YPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="SoundLocatorMono" ID="{39323357-2CA0-4E63-BE79-C78DA1B5C26C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="NonSpazialized" ID="{120D7077-2D3F-4581-A1C5-60D6514916AA}" ShortID="606085898">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TutorialTravelAstronaut" ID="{3F99D9A3-C0B6-495F-9321-9267B6E7DC31}" ShortID="97593122">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-130</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{76B42642-AA55-4722-BC7D-0991A33AEAB6}" ShortID="567953188" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAstronaut" ID="{7C5F142E-A083-4B0A-9D01-6CDC4E1760F9}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAstronaut.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="985626263"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AstronautFX" ID="{3EE90344-2E01-4D4D-82CB-43ED623AFA5E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.20359281437126"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="852534410"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AstronautV2" ID="{705DBD78-CAA8-490F-8548-3220811A4F41}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0738137082601055"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.51318101933217"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautV2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207086288"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{89028AB5-2668-48C9-83D2-E57A2C8A15B0}" ShortID="85925843">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="DopplerParam" ID="{1B56E753-43A7-434D-B9D7-A07630BCD909}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{83D91943-8CBA-480F-B32A-907266057153}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>2</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AstronautV2" ID="{705DBD78-CAA8-490F-8548-3220811A4F41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TutorialTravelAsteroid" ID="{F76541B7-4225-44E4-A4F3-C550866C960F}" ShortID="242515613">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{193DB975-FEB8-45AE-A027-1F5C3A9EBDD4}" ShortID="977192713" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAsteroid" ID="{04692571-8C29-458E-98A0-9EAAF775FCE3}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.685925998343449"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.783605333550586"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAsteroid.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="654071117"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidFX" ID="{341B07F9-064C-4DA2-8CC7-4520B9B71EA6}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.134131736526946"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.948502994011976"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177499369"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidFX_V2" ID="{E5ED1651-3528-4F97-A633-6040C4D9F048}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.151142355008787"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.607640095037342"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidFX_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="324428845"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidV3" ID="{F715EE94-36AC-4877-9F14-D23DC24D4DCD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0949033391915641"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.632688927943761"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidV3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="762191576"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{B8B3BD07-5115-45A7-B0DA-F5B72955A7FA}" ShortID="425633154">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="astronautCollisionValue" ID="{5B298669-D42E-42E9-A791-03087A4D0394}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{73E01FC2-F2C6-457D-8E73-1A65D303E74B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AsteroidFX_V2" ID="{E5ED1651-3528-4F97-A633-6040C4D9F048}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TutorialTravelAlien" ID="{0BCB7947-1C49-430D-B040-249ACFA9D097}" ShortID="224030337">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-160</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{51FE09FD-FDA7-49D6-811A-BA38A787A4B7}" ShortID="348499684" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAlien" ID="{7ACDF6DD-795A-4451-93C0-282BF5610216}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAlien.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="717137799"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AlienFX" ID="{3A097018-482E-4ECB-9E08-B9DAA5A5218E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.87305389221557"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.58203592814371"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AlienFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="757954999"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AlienV2" ID="{A56A959A-87F0-448E-B2F7-314A996B483D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0622242628393521"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.456626851073761"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.2463029587304"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AlienV2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="426179743"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AlienV2" ID="{A56A959A-87F0-448E-B2F7-314A996B483D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TutorialTravelLaser" ID="{FA8EAF99-1C86-46A9-8D53-BC7EA06DDB88}" ShortID="900789664">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{599156E9-7FF3-43DC-85DA-1ED481365384}" ShortID="616929562" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelLaser" ID="{D5DD6D83-EB5F-4FF9-81D2-CE802DCBB0DF}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelLaser.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="258379341"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserFX" ID="{E0782324-B189-4A84-BFF0-9F5D4BEF114D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.550898203592813"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780185210"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserFx_v2" ID="{05CBEEAF-6DDA-4036-96F8-CFBA58C70FF4}">
+											<Language>SFX</Language>
+											<AudioFile>LaserFx_v2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78379178"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserV3" ID="{F9D90135-427B-4B79-AA53-B1D125B2C7A5}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.504393673110722"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserV3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="822024291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserV3" ID="{F9D90135-427B-4B79-AA53-B1D125B2C7A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="EnvironmentFX" ID="{44F3E1DA-163E-497F-B63F-788BBCB89286}" ShortID="231038511">
+									<ChildrenList>
+										<Sound Name="Warpjump" ID="{BFBC022F-75FE-47A8-B4C8-174B3E9DCAF5}" ShortID="699984476">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="AttachableMixerInput">
+													<Custom>
+														<Effect Name="Oculus Spatializer (Attached)" ID="{90D7628F-493C-49D5-87E3-B14000FBDD24}" ShortID="882005251" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Warpjump" ID="{B4C0CBA1-AFFE-49B9-9B7E-D5694F84BE6C}">
+													<Language>SFX</Language>
+													<AudioFile>Warpjump.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="987740095"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="WarpJumpShieldsUp" ID="{40BF2383-016F-4896-A4C4-E4BC58B4B913}">
+													<Language>SFX</Language>
+													<AudioFile>WarpJumpShieldsUp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="338399698"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WarpJumpShieldsUp" ID="{40BF2383-016F-4896-A4C4-E4BC58B4B913}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="StartSequence" ID="{6F5CACF7-1EC1-4171-B239-C89016B184C4}" ShortID="167137199">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StartSequence" ID="{53731A09-E71F-48BD-8752-5E437373C734}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.62891876247505"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.96071337325349"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>StartSequence.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="106840223"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="StartSequence" ID="{53731A09-E71F-48BD-8752-5E437373C734}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="LevelCountdown" ID="{AB0515D6-A88F-4DAE-9566-0D760D8C77A0}" ShortID="1063315371">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LevelCountdown" ID="{E4E224CC-EB03-4B5E-8D41-D4CD9FB7600E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.994011976047904"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.976047904191616"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>LevelCountdown.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="513112263"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="LevelCountdown" ID="{E4E224CC-EB03-4B5E-8D41-D4CD9FB7600E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EndSequence" ID="{868D858F-FBF1-45A2-B6D5-2B8115AF51EB}" ShortID="457822074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EndSequence" ID="{032AD8D5-4495-43B9-B913-81A185D0D64D}">
+													<Language>SFX</Language>
+													<AudioFile>EndSequence.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="157023104"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EndSequence" ID="{032AD8D5-4495-43B9-B913-81A185D0D64D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoorToTutorial" ID="{BF5D21E7-7927-4FC9-935F-BC0099C62F4C}" ShortID="210544336">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorToTutorial" ID="{BD08F784-8D71-4231-97A2-91C50B8504DA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="1.19421247301316"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorToTutorial.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202580882"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorToTutorial" ID="{BD08F784-8D71-4231-97A2-91C50B8504DA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Welcome" ID="{89DDB541-2A8B-4FA0-A4B2-1F1D36CD3E7B}" ShortID="337536486">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.7</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Welcome" ID="{19B83B22-A63A-4900-AF96-DFCD2740B55A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0395206322049778"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0395206322049778"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Welcome.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="693596093"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Welcome" ID="{19B83B22-A63A-4900-AF96-DFCD2740B55A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UIClick" ID="{EA5496FC-B086-4777-B1A1-823D551A488A}" ShortID="166712351">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UIClick" ID="{2FF310B4-7773-4171-93D6-8BDFFAD81E6E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0534754708270534"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0534754708270534"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>UIClick.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321599719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="UIClick" ID="{2FF310B4-7773-4171-93D6-8BDFFAD81E6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TutorialAmbiance" ID="{69F85C2C-4CFE-48E5-BD6E-33EBC9441BBE}" ShortID="722599538">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-330</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EndSequence" ID="{9E5CF263-C776-448C-840E-F12CB2AAD261}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="978.947"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.742514970059879"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.01916167664671"/>
+														<Property Name="LoopEnd" Type="Real64" Value="61.4059880239521"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.67784431137725"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EndSequence.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="99171711"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EndSequence" ID="{9E5CF263-C776-448C-840E-F12CB2AAD261}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AsteroidCollisionPart2" ID="{6A744569-7AFD-4791-A181-15DE8ABA58DF}" ShortID="244111661">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AsteroidHit5Sec" ID="{F3BD470E-9D96-4A45-BC27-CAB760894EEA}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.394399889454146"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.97372350230415"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AsteroidHit5Sec.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="634265298"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AsteroidHit5Sec" ID="{F3BD470E-9D96-4A45-BC27-CAB760894EEA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="KillSoundLevelEnd" ID="{B9CD15F9-C3A3-4666-AA8B-8D6617FE22F7}" ShortID="978074112">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>4.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-440</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="LaserAction" ID="{F59A0AAC-7B2D-4E9A-9C99-309A95775FD6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.02184102359796"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.282530688622754"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.71318475951323"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.76193346774193"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>LaserAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="208233062"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="AlienAction" ID="{51150A0A-216D-43D2-991A-329686A775D6}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="23.073"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0220126011740373"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.352524706963118"/>
+														<Property Name="LoopEnd" Type="Real64" Value="0.410304803776647"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.233333572444795"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.472930654116783"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AlienAction.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="575486695"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AlienAction" ID="{51150A0A-216D-43D2-991A-329686A775D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UIClick2" ID="{BC456F08-43B8-48E7-BECC-10B19E7FCF1C}" ShortID="1060744840">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>35</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UIClick" ID="{8E9BFE59-7406-4B5F-9E9F-6F58517D0F23}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0534754708270534"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0534754708270534"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>UIClick.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321599719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="UIClick" ID="{8E9BFE59-7406-4B5F-9E9F-6F58517D0F23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="ResonanceReflectSpatializerStraight" ID="{EDFC9011-4FAB-466D-81A2-407E4CE414BF}" ShortID="858140091">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Resonance Audio Room Effects (Attached)" ID="{9613CBED-964F-474A-B64C-E597987E0D2E}" ShortID="111944431" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TravelAttenuationStraight" ID="{8AF6DE76-74A8-453F-B763-F7DAAD2C84B0}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Resonance Room Effect Bus" ID="{07367BF3-9FE0-496D-BDD4-21999B9C2CAA}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LocationCueStraight" ID="{D7191112-AF03-44FF-92F2-98BF8D3A36E0}" ShortID="408659773">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{350EE597-4106-4CD2-8896-CB3100850503}" ShortID="452969317" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3">
+													<PropertyList>
+														<Property Name="EnableReflections" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelPrefabs" ID="{6A79DE4F-297F-4CC7-BF13-17B00CAB0409}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LocationCue" ID="{0B52448A-3AA9-4E3F-B61F-FBA8C9E520B5}">
+											<Language>SFX</Language>
+											<AudioFile>LocationCue.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="216218503"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="WhiteNoise2HzDown" ID="{BEE9629F-51BF-46C2-B56C-EFACBF1D08D1}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0633798074574266"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.531599297012304"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WhiteNoise2HzDown.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="928439080"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="sonar" ID="{A8732106-170D-4C89-A9D5-722339565A60}">
+											<Language>SFX</Language>
+											<AudioFile>sonar.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="224348121"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LocationFX" ID="{891460D4-54E2-43D4-9A67-2EB62E4B967F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0224550898203593"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LocationFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="926959803"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{28E2631F-7225-4808-B649-0D628C9A53AD}" ShortID="861495565">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="astronautCollisionValue" ID="{5B298669-D42E-42E9-A791-03087A4D0394}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{9047F7AD-FD2C-47A5-997F-AAF1FC5A40E3}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="LocationFX" ID="{891460D4-54E2-43D4-9A67-2EB62E4B967F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TravelLaser" ID="{57614164-2803-4084-8020-5094C2B6B0F4}" ShortID="889945054">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Attached)" ID="{23AAF1FA-F42F-4121-AF76-AF6E0F92E5C2}" ShortID="798309446" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelLaser" ID="{70F8BBA5-0E6D-48F0-8BDF-F8EF0A313CC9}">
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelLaser.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="258379341"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserFX" ID="{25239547-BCF9-4E55-B44C-E92021C93420}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.550898203592813"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780185210"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserFx_v2" ID="{D5C393C9-7082-4218-B2AB-18987698BAAB}">
+											<Language>SFX</Language>
+											<AudioFile>LaserFx_v2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78379178"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="LaserV3" ID="{5A43DB26-EE02-4E0A-A828-1FF71A03F13C}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.504393673110722"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>LaserV3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="822024291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CB72568E-9038-4C20-BB07-138CC0F17DA6}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-7.09459459459459"/>
+												<Property Name="PanY" Type="Real64" Value="2.17391304347825"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{049841E1-7B75-4139-B3A5-76CE69073091}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Circleee" ID="{15A9DA75-4ADF-4FB3-930F-A8970248115D}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="15000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.08629</XPos>
+															<YPos>74.29379</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.5533</XPos>
+															<YPos>76.27119</YPos>
+															<Flags>0</Flags>
+															<Time>652</Time>
+														</Point>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>63.84181</YPos>
+															<Flags>0</Flags>
+															<Time>1304</Time>
+														</Point>
+														<Point>
+															<XPos>76.6497461928934</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>1956</Time>
+														</Point>
+														<Point>
+															<XPos>69.5431472081218</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>2608</Time>
+														</Point>
+														<Point>
+															<XPos>51.2690355329949</XPos>
+															<YPos>-66.1016949152542</YPos>
+															<Flags>0</Flags>
+															<Time>3260</Time>
+														</Point>
+														<Point>
+															<XPos>8.62944162436548</XPos>
+															<YPos>-80.225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>3913</Time>
+														</Point>
+														<Point>
+															<XPos>-20.8121827411168</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>4565</Time>
+														</Point>
+														<Point>
+															<XPos>-53.8071065989848</XPos>
+															<YPos>-40.1129943502825</YPos>
+															<Flags>0</Flags>
+															<Time>5217</Time>
+														</Point>
+														<Point>
+															<XPos>-61.9289340101523</XPos>
+															<YPos>6.21468926553672</YPos>
+															<Flags>0</Flags>
+															<Time>5869</Time>
+														</Point>
+														<Point>
+															<XPos>-43.1472081218274</XPos>
+															<YPos>33.3333333333333</YPos>
+															<Flags>0</Flags>
+															<Time>6521</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>49.1525423728814</YPos>
+															<Flags>0</Flags>
+															<Time>7173</Time>
+														</Point>
+														<Point>
+															<XPos>32.4873096446701</XPos>
+															<YPos>25.4237288135593</YPos>
+															<Flags>0</Flags>
+															<Time>7826</Time>
+														</Point>
+														<Point>
+															<XPos>49.238578680203</XPos>
+															<YPos>-0.564971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>8478</Time>
+														</Point>
+														<Point>
+															<XPos>46.19289</XPos>
+															<YPos>-29.9435</YPos>
+															<Flags>0</Flags>
+															<Time>9130</Time>
+														</Point>
+														<Point>
+															<XPos>32.48731</XPos>
+															<YPos>-52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>9782</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-48.58757</YPos>
+															<Flags>0</Flags>
+															<Time>10434</Time>
+														</Point>
+														<Point>
+															<XPos>-24.3654822335025</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>11086</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>17.51412</YPos>
+															<Flags>0</Flags>
+															<Time>11739</Time>
+														</Point>
+														<Point>
+															<XPos>4.06091370558376</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>12391</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-2.82485875706215</YPos>
+															<Flags>0</Flags>
+															<Time>13043</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-18.6440677966102</YPos>
+															<Flags>0</Flags>
+															<Time>13695</Time>
+														</Point>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-19.20904</YPos>
+															<Flags>0</Flags>
+															<Time>14347</Time>
+														</Point>
+														<Point>
+															<XPos>-2.53807106598984</XPos>
+															<YPos>-4.51977401129943</YPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{FB6CE5DD-0C7B-4CCB-B0D6-CA713E5934B1}" ShortID="263425110">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="straightSpeed" ID="{9C4B091A-4BBF-4B3F-8F78-2B5B326A48F9}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{08CBE563-E39D-4995-A68F-6FD5EC38DC58}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>500</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserV3" ID="{5A43DB26-EE02-4E0A-A828-1FF71A03F13C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AstronautTest" ID="{0647420F-4D5B-42B1-BC93-D7E8E3BC25D0}" ShortID="66832262">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>350</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ActionAttenuation" ID="{29C96706-3D28-46FD-A31F-621996622B3D}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="OculusBus" ID="{22BB4E9F-43EE-4638-B074-9970791CF3F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AstronautV2" ID="{1C6A330A-9741-4171-92D1-240F703FCEC3}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.66586538461538"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AstronautV2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="19602991"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AstronautV2" ID="{1C6A330A-9741-4171-92D1-240F703FCEC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TravelAsteroid" ID="{B64CB1A4-644D-49AD-A988-8B98421AB301}" ShortID="415600023">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="AttachableMixerInput">
+											<Custom>
+												<Effect Name="Resonance Audio Room Effects (Attached)" ID="{11030A10-F8EA-43B7-8582-F39162B799F5}" ShortID="816130849" PluginName="AttachableMixerInput" CompanyID="272" PluginID="201" PluginType="3"/>
+											</Custom>
+										</Reference>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TravelAttenuationCircular" ID="{1AC2C4A3-20A7-4C58-9780-7C4DCBCB9C72}" WorkUnitID="{D7ED126C-DE12-47C4-A836-634F29A89910}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{75425E8B-8D0A-440D-8CC6-DA9BB6DDE74C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="SimplifiedReflect" ID="{D81E4A96-27C9-4C76-826E-C2C05F50CF13}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="ResonanceSpatializerAux" ID="{58CB02FD-8CBA-42C6-90BD-1FA28D16C98B}" WorkUnitID="{79F1D383-B4C1-43FF-8FDD-A8E5ABF6EEA5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MonoTravelAsteroid" ID="{8707EB0C-C7D0-4122-9FBF-A2C06D6DB680}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.685925998343449"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.783605333550586"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MonoTravelAsteroid.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="654071117"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidFX" ID="{F6C2922C-97EF-4A5D-8E08-1A32DFE817D6}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.134131736526946"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.948502994011976"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidFX.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177499369"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidFX_V2" ID="{1D58EA82-EA3C-428C-A8F9-1E9C9A9C812C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.151142355008787"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.595801016595984"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidFX_V2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="602082222"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="AsteroidV3" ID="{20C3C679-57BE-47A9-A636-980EFEB7EC19}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0949033391915641"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.632688927943761"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AsteroidV3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="762191576"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{FA48BDB0-45D6-413C-9507-66620DCAB583}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="0.139447958596887"/>
+												<Property Name="PanY" Type="Real64" Value="0.313447927199177"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{6C974DAA-E3C4-4F48-B774-A36B29404F16}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Circleee" ID="{7EFBFC6E-E5B5-4BAD-95AE-C0211253B2D2}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="15000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.08629</XPos>
+															<YPos>74.29379</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>3.5533</XPos>
+															<YPos>76.27119</YPos>
+															<Flags>0</Flags>
+															<Time>652</Time>
+														</Point>
+														<Point>
+															<XPos>37.56345</XPos>
+															<YPos>63.84181</YPos>
+															<Flags>0</Flags>
+															<Time>1304</Time>
+														</Point>
+														<Point>
+															<XPos>76.6497461928934</XPos>
+															<YPos>7.34463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>1956</Time>
+														</Point>
+														<Point>
+															<XPos>69.5431472081218</XPos>
+															<YPos>-31.6384180790961</YPos>
+															<Flags>0</Flags>
+															<Time>2608</Time>
+														</Point>
+														<Point>
+															<XPos>51.2690355329949</XPos>
+															<YPos>-66.1016949152542</YPos>
+															<Flags>0</Flags>
+															<Time>3260</Time>
+														</Point>
+														<Point>
+															<XPos>8.62944162436548</XPos>
+															<YPos>-80.225988700565</YPos>
+															<Flags>0</Flags>
+															<Time>3913</Time>
+														</Point>
+														<Point>
+															<XPos>-20.8121827411168</XPos>
+															<YPos>-68.3615819209039</YPos>
+															<Flags>0</Flags>
+															<Time>4565</Time>
+														</Point>
+														<Point>
+															<XPos>-53.8071065989848</XPos>
+															<YPos>-40.1129943502825</YPos>
+															<Flags>0</Flags>
+															<Time>5217</Time>
+														</Point>
+														<Point>
+															<XPos>-61.9289340101523</XPos>
+															<YPos>6.21468926553672</YPos>
+															<Flags>0</Flags>
+															<Time>5869</Time>
+														</Point>
+														<Point>
+															<XPos>-43.1472081218274</XPos>
+															<YPos>33.3333333333333</YPos>
+															<Flags>0</Flags>
+															<Time>6521</Time>
+														</Point>
+														<Point>
+															<XPos>-3.55329949238579</XPos>
+															<YPos>49.1525423728814</YPos>
+															<Flags>0</Flags>
+															<Time>7173</Time>
+														</Point>
+														<Point>
+															<XPos>32.4873096446701</XPos>
+															<YPos>25.4237288135593</YPos>
+															<Flags>0</Flags>
+															<Time>7826</Time>
+														</Point>
+														<Point>
+															<XPos>49.238578680203</XPos>
+															<YPos>-0.564971751412429</YPos>
+															<Flags>0</Flags>
+															<Time>8478</Time>
+														</Point>
+														<Point>
+															<XPos>46.19289</XPos>
+															<YPos>-29.9435</YPos>
+															<Flags>0</Flags>
+															<Time>9130</Time>
+														</Point>
+														<Point>
+															<XPos>32.48731</XPos>
+															<YPos>-52.54237</YPos>
+															<Flags>0</Flags>
+															<Time>9782</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50761</XPos>
+															<YPos>-48.58757</YPos>
+															<Flags>0</Flags>
+															<Time>10434</Time>
+														</Point>
+														<Point>
+															<XPos>-24.3654822335025</XPos>
+															<YPos>-10.7344632768362</YPos>
+															<Flags>0</Flags>
+															<Time>11086</Time>
+														</Point>
+														<Point>
+															<XPos>-18.78173</XPos>
+															<YPos>17.51412</YPos>
+															<Flags>0</Flags>
+															<Time>11739</Time>
+														</Point>
+														<Point>
+															<XPos>4.06091370558376</XPos>
+															<YPos>18.0790960451977</YPos>
+															<Flags>0</Flags>
+															<Time>12391</Time>
+														</Point>
+														<Point>
+															<XPos>25.8883248730965</XPos>
+															<YPos>-2.82485875706215</YPos>
+															<Flags>0</Flags>
+															<Time>13043</Time>
+														</Point>
+														<Point>
+															<XPos>19.7969543147208</XPos>
+															<YPos>-18.6440677966102</YPos>
+															<Flags>0</Flags>
+															<Time>13695</Time>
+														</Point>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>-19.20904</YPos>
+															<Flags>0</Flags>
+															<Time>14347</Time>
+														</Point>
+														<Point>
+															<XPos>-2.53807106598984</XPos>
+															<YPos>-4.51977401129943</YPos>
+															<Flags>0</Flags>
+															<Time>15000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{01A63FA8-1A07-41C3-98C9-00B3774CA1D4}" ShortID="356831497">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="straightSpeed" ID="{9C4B091A-4BBF-4B3F-8F78-2B5B326A48F9}" WorkUnitID="{7798BD46-7387-46C9-AB97-232FED88A41C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{A78E4577-2CC2-48CB-81E5-728F879C6FEF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>300</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AsteroidFX_V2" ID="{1D58EA82-EA3C-428C-A8F9-1E9C9A9C812C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{8999A99E-81F8-4F01-90A2-591E0BF6F660}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-7.09459459459459"/>
+										<Property Name="PanY" Type="Real64" Value="2.17391304347825"/>
+									</PropertyList>
+								</Panner>
+								<Position Name="" ID="{85CB5295-AA8A-4E47-B841-362930B298AA}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Circleee" ID="{C58DF6A5-D631-416E-BE24-87842CC46548}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="15000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-39.08629</XPos>
+													<YPos>74.29379</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>3.5533</XPos>
+													<YPos>76.27119</YPos>
+													<Flags>0</Flags>
+													<Time>652</Time>
+												</Point>
+												<Point>
+													<XPos>37.56345</XPos>
+													<YPos>63.84181</YPos>
+													<Flags>0</Flags>
+													<Time>1304</Time>
+												</Point>
+												<Point>
+													<XPos>76.6497461928934</XPos>
+													<YPos>7.34463276836158</YPos>
+													<Flags>0</Flags>
+													<Time>1956</Time>
+												</Point>
+												<Point>
+													<XPos>69.5431472081218</XPos>
+													<YPos>-31.6384180790961</YPos>
+													<Flags>0</Flags>
+													<Time>2608</Time>
+												</Point>
+												<Point>
+													<XPos>51.2690355329949</XPos>
+													<YPos>-66.1016949152542</YPos>
+													<Flags>0</Flags>
+													<Time>3260</Time>
+												</Point>
+												<Point>
+													<XPos>8.62944162436548</XPos>
+													<YPos>-80.225988700565</YPos>
+													<Flags>0</Flags>
+													<Time>3913</Time>
+												</Point>
+												<Point>
+													<XPos>-20.8121827411168</XPos>
+													<YPos>-68.3615819209039</YPos>
+													<Flags>0</Flags>
+													<Time>4565</Time>
+												</Point>
+												<Point>
+													<XPos>-53.8071065989848</XPos>
+													<YPos>-40.1129943502825</YPos>
+													<Flags>0</Flags>
+													<Time>5217</Time>
+												</Point>
+												<Point>
+													<XPos>-61.9289340101523</XPos>
+													<YPos>6.21468926553672</YPos>
+													<Flags>0</Flags>
+													<Time>5869</Time>
+												</Point>
+												<Point>
+													<XPos>-43.1472081218274</XPos>
+													<YPos>33.3333333333333</YPos>
+													<Flags>0</Flags>
+													<Time>6521</Time>
+												</Point>
+												<Point>
+													<XPos>-3.55329949238579</XPos>
+													<YPos>49.1525423728814</YPos>
+													<Flags>0</Flags>
+													<Time>7173</Time>
+												</Point>
+												<Point>
+													<XPos>32.4873096446701</XPos>
+													<YPos>25.4237288135593</YPos>
+													<Flags>0</Flags>
+													<Time>7826</Time>
+												</Point>
+												<Point>
+													<XPos>49.238578680203</XPos>
+													<YPos>-0.564971751412429</YPos>
+													<Flags>0</Flags>
+													<Time>8478</Time>
+												</Point>
+												<Point>
+													<XPos>46.19289</XPos>
+													<YPos>-29.9435</YPos>
+													<Flags>0</Flags>
+													<Time>9130</Time>
+												</Point>
+												<Point>
+													<XPos>32.48731</XPos>
+													<YPos>-52.54237</YPos>
+													<Flags>0</Flags>
+													<Time>9782</Time>
+												</Point>
+												<Point>
+													<XPos>-0.50761</XPos>
+													<YPos>-48.58757</YPos>
+													<Flags>0</Flags>
+													<Time>10434</Time>
+												</Point>
+												<Point>
+													<XPos>-24.3654822335025</XPos>
+													<YPos>-10.7344632768362</YPos>
+													<Flags>0</Flags>
+													<Time>11086</Time>
+												</Point>
+												<Point>
+													<XPos>-18.78173</XPos>
+													<YPos>17.51412</YPos>
+													<Flags>0</Flags>
+													<Time>11739</Time>
+												</Point>
+												<Point>
+													<XPos>4.06091370558376</XPos>
+													<YPos>18.0790960451977</YPos>
+													<Flags>0</Flags>
+													<Time>12391</Time>
+												</Point>
+												<Point>
+													<XPos>25.8883248730965</XPos>
+													<YPos>-2.82485875706215</YPos>
+													<Flags>0</Flags>
+													<Time>13043</Time>
+												</Point>
+												<Point>
+													<XPos>19.7969543147208</XPos>
+													<YPos>-18.6440677966102</YPos>
+													<Flags>0</Flags>
+													<Time>13695</Time>
+												</Point>
+												<Point>
+													<XPos>1.01523</XPos>
+													<YPos>-19.20904</YPos>
+													<Flags>0</Flags>
+													<Time>14347</Time>
+												</Point>
+												<Point>
+													<XPos>-2.53807106598984</XPos>
+													<YPos>-4.51977401129943</YPos>
+													<Flags>0</Flags>
+													<Time>15000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

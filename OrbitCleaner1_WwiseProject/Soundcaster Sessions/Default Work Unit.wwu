@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{440FD62F-0887-4842-AAB4-C33FE1EB1AF0}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{440FD62F-0887-4842-AAB4-C33FE1EB1AF0}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{41909C8D-2DD5-41EF-84EC-D799E5DB7D5A}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="DopplerParam" ID="{1B56E753-43A7-434D-B9D7-A07630BCD909}"/>
+							<Value>22.7380952380952</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{4C277D54-5BF0-4DE7-8587-6CF4B0AC17B2}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Asteroid" ID="{BD63D3C1-4F8A-4008-9C89-F84F98FDB12B}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_01" ID="{BE3EFDBF-EBE2-40F6-A9F2-A200E4D49355}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="ActionAlien" ID="{B6E0021E-9BF1-4D87-932B-E1324011E934}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ActionAsteroid" ID="{393DA261-E58D-4AAD-A238-3001B031FED8}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ActionAstronaut" ID="{22A2F400-104B-440D-B237-00DC88D595F0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ActionLaser" ID="{6EB2EEB2-86ED-4308-8717-39187D3813AC}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="circularSpeed" ID="{B1AEBD5C-924D-4092-A531-D0FE0F4832A5}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="V2Volume" ID="{B1E78A71-C7D8-4593-90FC-7BB1500B16D6}"/>
+							<Value>1.97303921568627</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="straightSpeed" ID="{9C4B091A-4BBF-4B3F-8F78-2B5B326A48F9}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="distanceToShip" ID="{74278904-96C9-4FB5-AB93-E7B8B0E786B2}"/>
+							<Value>40.3536977491961</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{4C277D54-5BF0-4DE7-8587-6CF4B0AC17B2}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

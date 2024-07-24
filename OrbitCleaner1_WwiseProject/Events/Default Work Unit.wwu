@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0B2CB107-A64F-4A5F-9337-735D086F1515}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_LocationCue" ID="{F319B6C9-8A20-449C-A67A-BE45341842AE}">
+					<ChildrenList>
+						<Action Name="" ID="{5AA7533A-9AEC-4DAF-A740-23256BB37A30}" ShortID="85413953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LocationCue" ID="{6F53891E-B1C7-4211-BC43-A65BE121E84E}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollectedAll" ID="{C335A50D-1462-4B75-82B2-C64A3C9DA576}">
+					<ChildrenList>
+						<Action Name="" ID="{AE1E589B-014F-4A6F-8D01-53625EF5290D}" ShortID="544760890">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectedAll" ID="{A5EE48BE-6CD4-446B-956D-F8B55915AF4B}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Warpjump" ID="{48347F18-A0F0-4CF3-B0A9-C5B36D182AD0}">
+					<ChildrenList>
+						<Action Name="" ID="{E706C5E2-E0FF-4F28-824F-1E9BDF577174}" ShortID="898789937">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Warpjump" ID="{BFBC022F-75FE-47A8-B4C8-174B3E9DCAF5}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TravelAsteroid" ID="{8F81C65C-26C6-4B26-A292-66B67A5E1024}">
+					<ChildrenList>
+						<Action Name="" ID="{7B831F64-2996-4641-BA84-9DA4BE7EBB1F}" ShortID="775559287">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAsteroid" ID="{B64CB1A4-644D-49AD-A988-8B98421AB301}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TravelAstronaut" ID="{3C9269C6-02DB-41B8-8F06-8D79C1F42F6A}">
+					<ChildrenList>
+						<Action Name="" ID="{72B931A7-925C-4852-B6E6-232108DAEC79}" ShortID="526521061">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAstronaut" ID="{E25B71BA-9F49-4C55-A063-398B27E791AA}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TravelAlien" ID="{0E92D0A8-1759-4BB1-AA77-8C0971E9C0D0}">
+					<ChildrenList>
+						<Action Name="" ID="{7FECAF02-E6C4-4001-AA82-4E1799AF87EF}" ShortID="105882318">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAlien" ID="{2E330F2F-3F6C-452E-A21E-3548028819AA}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TravelLaser" ID="{832113EE-8430-474D-9577-37E22CF8FCEB}">
+					<ChildrenList>
+						<Action Name="" ID="{47C94B19-BA4E-4428-BDAE-9EBC1A2664E1}" ShortID="608518021">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelLaser" ID="{57614164-2803-4084-8020-5094C2B6B0F4}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TravelAsteroid" ID="{8466466A-BFFD-421C-B8BA-4E7DD896FE7C}">
+					<ChildrenList>
+						<Action Name="" ID="{653BEA80-3DE3-44F7-BB41-D4B95DC49D26}" ShortID="929122051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAsteroid" ID="{B64CB1A4-644D-49AD-A988-8B98421AB301}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TravelAstronaut" ID="{4DB545F1-4D6E-4DC1-8EF0-E8B822368826}">
+					<ChildrenList>
+						<Action Name="" ID="{E8C1D42E-1884-4AFB-9062-C64D59219659}" ShortID="120346543">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAstronaut" ID="{E25B71BA-9F49-4C55-A063-398B27E791AA}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TravelAlien" ID="{C7BA7D62-40C6-426E-8079-C5B707C1F4DC}">
+					<ChildrenList>
+						<Action Name="" ID="{04CBB17E-A931-436A-BA33-067B6E609227}" ShortID="303455489">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelAlien" ID="{2E330F2F-3F6C-452E-A21E-3548028819AA}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TravelLaser" ID="{C901B4AE-2FE5-46D5-9665-B39261E83E0B}">
+					<ChildrenList>
+						<Action Name="" ID="{0C723B06-0B03-44E0-A50C-097225B4EB64}" ShortID="243679560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TravelLaser" ID="{57614164-2803-4084-8020-5094C2B6B0F4}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EndSequence" ID="{9421FD70-C176-46F4-88CE-E881A427F7C8}">
+					<ChildrenList>
+						<Action Name="" ID="{5057A280-59A7-4296-8558-98441889367D}" ShortID="1041022334">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndSequence" ID="{868D858F-FBF1-45A2-B6D5-2B8115AF51EB}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LevelCountdown" ID="{DEF25C15-B154-497B-92BF-A2EB14A245B0}">
+					<ChildrenList>
+						<Action Name="" ID="{34F54B86-CCD6-48B5-A491-0E83D05C1553}" ShortID="720306268">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LevelCountdown" ID="{AB0515D6-A88F-4DAE-9566-0D760D8C77A0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_StartSequence" ID="{D7AC6A97-8CDD-4F01-8DA9-021EA04F5000}">
+					<ChildrenList>
+						<Action Name="" ID="{459CFD4E-3504-4910-8E54-E32EFD3791CF}" ShortID="24816758">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartSequence" ID="{6F5CACF7-1EC1-4171-B239-C89016B184C4}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialTravelAsteroid" ID="{EEA3E3B6-BA8C-49B6-9759-9BCB6A53F0D0}">
+					<ChildrenList>
+						<Action Name="" ID="{88F9D4BE-ACFF-47DA-845E-689053FEB5A5}" ShortID="1034039996">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialTravelAsteroid" ID="{F76541B7-4225-44E4-A4F3-C550866C960F}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialTravelAstronaut" ID="{7A612669-D7F0-4A83-8AE1-89C9B5186884}">
+					<ChildrenList>
+						<Action Name="" ID="{B171AA4A-4393-46CE-A5AF-49EA8ACC3930}" ShortID="665481467">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialTravelAstronaut" ID="{3F99D9A3-C0B6-495F-9321-9267B6E7DC31}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialTravelAlien" ID="{D4607912-74A3-4C49-8E9B-938C43404444}">
+					<ChildrenList>
+						<Action Name="" ID="{39577A3C-BB2B-4B7B-846F-817D5CE9ECC9}" ShortID="417888234">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialTravelAlien" ID="{0BCB7947-1C49-430D-B040-249ACFA9D097}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialTravelLaser" ID="{918DDAD3-9647-4454-94E4-853F02DFB65E}">
+					<ChildrenList>
+						<Action Name="" ID="{D4654387-B72E-4731-89A3-081E6F0158B6}" ShortID="19126169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialTravelLaser" ID="{FA8EAF99-1C86-46A9-8D53-BC7EA06DDB88}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AsteroidCollision" ID="{29E85DA6-A3B9-46B4-8316-1D6CC2F07FD3}">
+					<ChildrenList>
+						<Action Name="" ID="{0890C509-1B4F-4E9C-B0D3-108CD816C4A2}" ShortID="339057960">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AsteroidCollision" ID="{74524F66-826A-4150-B363-4CF580CC369B}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AsteroidCollision" ID="{D4D0D3DF-3DDB-4C35-9300-9D222C55644A}">
+					<ChildrenList>
+						<Action Name="" ID="{8A5AFD69-AFC5-48BF-B92A-8169BE671FF4}" ShortID="268216354">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AsteroidCollision" ID="{74524F66-826A-4150-B363-4CF580CC369B}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ActionAsteroid" ID="{F56EA8E8-4BF8-42F9-AF3C-46F77EE9AB6A}">
+					<ChildrenList>
+						<Action Name="" ID="{4FC8FE0B-8E39-4C2E-8630-B3CC741BC2DA}" ShortID="344642623">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ActionAsteroid" ID="{393DA261-E58D-4AAD-A238-3001B031FED8}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ActionAstronaut" ID="{F6ECDEC2-1DB4-412F-B247-34C4E5C410AD}">
+					<ChildrenList>
+						<Action Name="" ID="{E4F51AFF-D63B-4082-96C5-61A639BC0DE8}" ShortID="234760822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ActionAstronaut" ID="{22A2F400-104B-440D-B237-00DC88D595F0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ActionAlien" ID="{E9EDD1DB-4E1D-4C43-8CF3-5B73B6B6A080}">
+					<ChildrenList>
+						<Action Name="" ID="{BF930948-9137-4BC0-8818-615545753465}" ShortID="286193352">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ActionAlien" ID="{B6E0021E-9BF1-4D87-932B-E1324011E934}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ActionLaser" ID="{F8E606F3-F0D1-4798-954A-82EE6D49435A}">
+					<ChildrenList>
+						<Action Name="" ID="{CE248A8A-BB55-40F6-8091-887C714BF634}" ShortID="432277054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ActionLaser" ID="{6EB2EEB2-86ED-4308-8717-39187D3813AC}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollisionAll" ID="{98CE2AB2-BB21-47FE-B24D-3170C4183D60}">
+					<ChildrenList>
+						<Action Name="" ID="{4336BDF7-9144-40AD-9979-16E4486946CA}" ShortID="564287163">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollisionAll" ID="{8F3CC1B3-2B48-419C-9328-0A418273B1AE}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UIClick" ID="{485D02E7-50A4-4B8D-BCF1-0FC021B14C28}">
+					<ChildrenList>
+						<Action Name="" ID="{522655DB-ECBD-44C7-B56A-2FEAA051D980}" ShortID="670271762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIClick" ID="{EA5496FC-B086-4777-B1A1-823D551A488A}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Welcome" ID="{E4EB64BC-E179-4B86-B0CB-B3BE98CB2DA9}">
+					<ChildrenList>
+						<Action Name="" ID="{0D1EB5DF-7E1C-47EA-B395-C8A1C17B620F}" ShortID="366722873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Welcome" ID="{89DDB541-2A8B-4FA0-A4B2-1F1D36CD3E7B}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TutorialAmbiance" ID="{133ECB0A-0E84-4B5A-8C23-1B7A7249B27F}">
+					<ChildrenList>
+						<Action Name="" ID="{AF9A2112-E725-4CE1-BEDE-B6949686702C}" ShortID="526288930">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialAmbiance" ID="{69F85C2C-4CFE-48E5-BD6E-33EBC9441BBE}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_TutorialAmbiance" ID="{C5E995FA-4A95-46C9-9ABB-1A8A88930715}">
+					<ChildrenList>
+						<Action Name="" ID="{9E7B020C-315E-4174-9627-912321F71596}" ShortID="161538967">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialAmbiance" ID="{69F85C2C-4CFE-48E5-BD6E-33EBC9441BBE}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AsteroidCollisionPart2" ID="{8C0A7EA1-4D60-4286-8BFD-92E4B6245410}">
+					<ChildrenList>
+						<Action Name="" ID="{26BA149C-1F87-45E3-971A-C1B1A7CC6840}" ShortID="946441301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AsteroidCollisionPart2" ID="{6A744569-7AFD-4791-A181-15DE8ABA58DF}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LocationCueStraight" ID="{32D0E09B-094C-43BF-90F7-25AFBBBE7E9D}">
+					<ChildrenList>
+						<Action Name="" ID="{00791BD8-9C21-433B-B59B-C004A05782FD}" ShortID="863371868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LocationCueStraight" ID="{D7191112-AF03-44FF-92F2-98BF8D3A36E0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AstronautTest" ID="{1CD757D4-D733-4CD3-A494-3CB12205E765}">
+					<ChildrenList>
+						<Action Name="" ID="{5D16965E-4D5D-4A7B-B0B8-1FDBE8707C0B}" ShortID="814234389">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AstronautTest" ID="{0647420F-4D5B-42B1-BC93-D7E8E3BC25D0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AstronautTest" ID="{AFF3821C-8178-4655-8CAF-B3F1DA8EBE71}">
+					<ChildrenList>
+						<Action Name="" ID="{8A06D71A-ADD3-4A78-8517-361CADE998BA}" ShortID="286594049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AstronautTest" ID="{0647420F-4D5B-42B1-BC93-D7E8E3BC25D0}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CollisionAllV2" ID="{6E371BFD-A340-4055-BF8C-386029CCCABB}">
+					<ChildrenList>
+						<Action Name="" ID="{83388422-141D-47C3-8866-E159FDCA1F5E}" ShortID="606981301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollisionAllV2" ID="{C61FD201-9E8A-4291-8EF5-6DA90205E404}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MouseLocator" ID="{F669D9AB-D9E8-428E-8ACB-B9F68BC81850}">
+					<ChildrenList>
+						<Action Name="" ID="{D183BC9A-E292-4D8B-9CAF-781E463125F0}" ShortID="719970427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MouseLocator" ID="{0C896C10-4FF8-471C-8064-A496F109A2F2}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MouseLocator" ID="{27A01A6F-7CE1-49E2-ACEC-8B7F11C0263E}">
+					<ChildrenList>
+						<Action Name="" ID="{E7864664-9AB0-4F12-B8CA-A910B45BFA32}" ShortID="868304179">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MouseLocator" ID="{0C896C10-4FF8-471C-8064-A496F109A2F2}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KillSoundLevelEnd" ID="{B31C6E33-C5A7-43C1-BCF2-AC0BEAB628AA}">
+					<ChildrenList>
+						<Action Name="" ID="{227604B3-650D-4B95-A22E-1A047C682EE3}" ShortID="155851822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KillSoundLevelEnd" ID="{B9CD15F9-C3A3-4666-AA8B-8D6617FE22F7}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UIClick2" ID="{5817A4CB-9753-4578-B585-345B7D7C9B67}">
+					<ChildrenList>
+						<Action Name="" ID="{E6FAFF6A-CCBB-419B-B18B-8C1679C296D8}" ShortID="775848329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIClick2" ID="{BC456F08-43B8-48E7-BECC-10B19E7FCF1C}" WorkUnitID="{4743849B-6D9A-437C-A28E-F095502E28DD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
