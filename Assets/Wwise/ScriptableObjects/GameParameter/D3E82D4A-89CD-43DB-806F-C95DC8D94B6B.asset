@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126b72841a29e724bb804d1c79185cab, type: 3}
+  m_Name: D3E82D4A-89CD-43DB-806F-C95DC8D94B6B
+  m_EditorClassIdentifier: 
+  objectName: debrisCollisionValue
+  id: 3798074291
+  guid: D3E82D4A-89CD-43DB-806F-C95DC8D94B6B

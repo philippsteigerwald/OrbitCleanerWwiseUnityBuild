@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3df0fa8f7a8744f860a1a4f3af522d, type: 3}
+  m_Name: D4D0D3DF-3DDB-4C35-9300-9D222C55644A
+  m_EditorClassIdentifier: 
+  objectName: Stop_AsteroidCollision
+  id: 136431489
+  guid: D4D0D3DF-3DDB-4C35-9300-9D222C55644A
