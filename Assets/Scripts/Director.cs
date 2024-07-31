@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class Director : MonoBehaviour
 {
-
     public AK.Wwise.Event mouseLocatorStart;
     public AK.Wwise.Event mouseLocatorStop;
 
+    void Start() { }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -23,15 +16,9 @@ public class Director : MonoBehaviour
             mouseLocatorStart.Post(gameObject);
         }
 
-         if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0))
         {
             mouseLocatorStop.Post(gameObject);
         }
     }
-
-// INstantiate at MousePosition???
-
 }
-
-
-

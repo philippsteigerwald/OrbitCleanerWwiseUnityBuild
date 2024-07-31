@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {
+      "AK.Wwise.Unity.API/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/AK.Wwise.Unity.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AK.Wwise.Unity.API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AK.Wwise.Unity.API/1.0.0": {
+      "type": "project",
+      "path": "AK.Wwise.Unity.API.csproj",
+      "msbuildProject": "AK.Wwise.Unity.API.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": [
+      "AK.Wwise.Unity.API >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/guestx/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/guestx/Documents/OrbitCleaner1/AK.Wwise.Unity.API.WwiseTypes.csproj",
+      "projectName": "AK.Wwise.Unity.API.WwiseTypes",
+      "projectPath": "/Users/guestx/Documents/OrbitCleaner1/AK.Wwise.Unity.API.WwiseTypes.csproj",
+      "packagesPath": "/Users/guestx/.nuget/packages/",
+      "outputPath": "/Users/guestx/Documents/OrbitCleaner1/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/guestx/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "projectReferences": {
+            "/Users/guestx/Documents/OrbitCleaner1/AK.Wwise.Unity.API.csproj": {
+              "projectPath": "/Users/guestx/Documents/OrbitCleaner1/AK.Wwise.Unity.API.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

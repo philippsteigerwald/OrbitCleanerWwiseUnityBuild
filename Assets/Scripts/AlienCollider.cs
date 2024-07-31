@@ -12,23 +12,11 @@ public float actionOffset = 10f;
 
 VariableManager variableManager;
 public GameObject GameObjectVariableManager;
-
-//public TutorialVariableManager tutorialVariableManager;
 public GameObject player;
-
-
 public Spawner spawnerScript;
-
-//public GameObject astronautCollisionPrefab;
-// public GameObject alienCollectedPrefab;
-// public GameObject alienCollisionPrefab;
-// public GameObject asteroidCollisionPrefab;
 public GameObject alienActionPrefab;
-
 public GameObject Blink;
-
 public GameObject collectedAllPrefab;
-
 public GameObject audioOffSet;
 
 
@@ -36,9 +24,7 @@ public GameObject audioOffSet;
 
 	void Start()
 {
-
 	variableManager = GameObjectVariableManager.GetComponent<VariableManager>();
-
 
 }
 

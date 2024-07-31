@@ -5,20 +5,15 @@ using UnityEngine;
 public class BlackCurtainTutorial : MonoBehaviour
 {
     // Start is called before the first frame update
-public VariableManager variableManager;
+    public VariableManager variableManager;
 
+    public void OnEnable()
+    {
+        variableManager.ActivateBlackCurtain();
+    }
 
-public void OnEnable()
-
-{
-
-    variableManager.ActivateBlackCurtain();
-}
-
-public void OnDisable()
-
-{
-
-    variableManager.DeactivateBlackCurtain();
-}
+    public void OnDisable()
+    {
+        variableManager.DeactivateBlackCurtain();
+    }
 }
