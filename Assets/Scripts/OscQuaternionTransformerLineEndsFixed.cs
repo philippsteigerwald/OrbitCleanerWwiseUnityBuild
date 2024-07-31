@@ -28,7 +28,7 @@ public class OscQuaternionTransformerLineEndsFixed : MonoBehaviour
     {
         this.transform.rotation = headTrackerRotation;
 
-        this.transform.Rotate(Vector3.left * -90); // this is from me?
+        this.transform.Rotate(Vector3.left * -90); 
     }
 
     public void SetRotationValue(OscMessage message)
@@ -39,7 +39,6 @@ public class OscQuaternionTransformerLineEndsFixed : MonoBehaviour
         message.TryGet(2, out qy);
         message.TryGet(3, out qz);
         headTrackerRotation = new(0, -qz, 0, qw);
-        //headTrackerRotation = new(-qx, -qz, -qy, qw);
         UpdateHeadRotation();
     }
 }
