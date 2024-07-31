@@ -1,6 +1,6 @@
 
 
-OrbitCleaner was designed to be used in the study for my Masterthesis. Exploring the Impact of Action Audio Games on Creativity: Perspectives in Sonic Thinking. If you are interested in the study head to the pdf in the OrbitCleaner Folder.
+OrbitCleaner was designed to be used in the study for my Masterthesis. Exploring the Impact of Action Audio Games on Creativity: Perspectives in Sonic Thinking. If you are interested in the study head to the pdf in OrbitCleaner_Game Folder.
 
 OrbitCleaner runs on Windows only and can be found in \OrbitCleaner_Game\OrbitCleaner1.exe
 
@@ -8,7 +8,7 @@ When you start the game you have to give your consent because this game was deve
 
 A report is created once you finish all 5 levels. You can look at your stats when navigating to:
 
-YOURPATH\CHI_PLAY_SupplementalFiles\OrbitCleaner\OrbitCleaner_Game\OrbitCleaner1_Data\Report
+\OrbitCleaner_Game\OrbitCleaner1_Data\Report
 
 Use "ESC" to quit.
 
