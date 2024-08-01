@@ -1,4 +1,6 @@
- <img src="[https://github.com/user-attachments/assets/9fc4aa99-78ce-44b7-864f-4d2556b1b95c](https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836)" width="1000">
+ <img src="https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836" width="900">
+
+ 
 
 OrbitCleaner is an Audiogame (played blindfolded) and was designed to be used in the study for my Masterthesis - Exploring the Impact of Action Audio Games on Creativity: Perspectives in Sonic Thinking. For more information on the development and sound design decisions head to the Masterthesis.pdf in the OrbitCleaner_Game folder.
 
@@ -15,16 +17,6 @@ A report is created once you finish all 5 levels. You can look at your stats whe
 Use "ESC" to quit.
 
 Enjoy!
-
-<div align="center">
-
-![also notbad](https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836)
-
-
-
-![Bild3](https://github.com/user-attachments/assets/9fc4aa99-78ce-44b7-864f-4d2556b1b95c)
-
-<div>
 
 
 
