@@ -1,4 +1,4 @@
- <img src="https://github.com/user-attachments/assets/9fc4aa99-78ce-44b7-864f-4d2556b1b95c" width="600" height="600">
+ <img src="https://github.com/user-attachments/assets/9fc4aa99-78ce-44b7-864f-4d2556b1b95c" width="600"> height="600">
 
 OrbitCleaner is an Audiogame (played blindfolded) and was designed to be used in the study for my Masterthesis - Exploring the Impact of Action Audio Games on Creativity: Perspectives in Sonic Thinking. For more information on the development and sound design decisions head to the Masterthesis.pdf in the OrbitCleaner_Game folder.
 
