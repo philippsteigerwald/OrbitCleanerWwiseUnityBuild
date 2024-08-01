@@ -4,15 +4,12 @@ For representation purposes a screenshot of the tutorial and a video of stage 5 
 
 <br/><br/>
 
-<br/><br/>
 
-<br/><br/>
 
  <img src="https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836" width="1000">
 
  <br/><br/>
- <br/><br/>
- <br/><br/>
+
 
 OrbitCleaner runs on Windows and can be found in \OrbitCleaner_Game\OrbitCleaner1.exe
 
@@ -26,7 +23,7 @@ Use "ESC" to quit.
 
 Enjoy!
 
-
+<br/><br/>
 
 https://github.com/user-attachments/assets/bd446aa3-00bc-4006-8d5c-65d4193d4e6e
 
