@@ -1,10 +1,18 @@
- <img src="https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836" width="900">
-
- 
-
 OrbitCleaner is an Audiogame (played blindfolded) and was designed to be used in the study for my Masterthesis - Exploring the Impact of Action Audio Games on Creativity: Perspectives in Sonic Thinking. For more information on the development and sound design decisions head to the Masterthesis.pdf in the OrbitCleaner_Game folder.
 
 For representation purposes a screenshot of the tutorial and a video of stage 5 of OrbitCleaner are attached below. However, the screen is rendered black in the study as the game is specfically ment to be played with headphones only. You are supposed to locate the objects and identifiy them by their sound and then use the corresponding action beam to neutralize them before they hit you.  
+
+<br/><br/>
+
+<br/><br/>
+
+<br/><br/>
+
+ <img src="https://github.com/user-attachments/assets/ce1ec40d-21af-427c-b582-e600971ee836" width="1000">
+
+ <br/><br/>
+ <br/><br/>
+ <br/><br/>
 
 OrbitCleaner runs on Windows and can be found in \OrbitCleaner_Game\OrbitCleaner1.exe
 
