@@ -14,11 +14,11 @@ Use "ESC" to quit.
 
 Enjoy!
 
-
+<div align="center">
 
 ![Bild3](https://github.com/user-attachments/assets/9fc4aa99-78ce-44b7-864f-4d2556b1b95c)
 
-
+<div>
 
 
 
